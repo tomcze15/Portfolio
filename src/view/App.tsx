@@ -7,11 +7,10 @@ import { DarkTheme } from 'themes';
 const App: FunctionComponent = (): JSX.Element => {
   return (
     <StrictMode>
-      <GlobalStyle {...DarkTheme}>
-        <ThemeProvider theme={DarkTheme}>
-          <div />
-        </ThemeProvider>
-      </GlobalStyle>
+      <GlobalStyle {...DarkTheme} />
+      <ThemeProvider theme={DarkTheme}>
+        <div />
+      </ThemeProvider>
     </StrictMode>
   );
 };

@@ -17,3 +17,10 @@ export interface IButtonProps {
   children: string;
   pathToDownload?: string;
 }
+
+export interface ITranslations {
+  HOME: string;
+  EXPERIENCE: string;
+  ACCOMPLISHMENT: string;
+  CONTACT: string;
+}

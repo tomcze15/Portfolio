@@ -27,7 +27,7 @@ export const CV_TITLE = 'CV.pdf';
 export const MENU_ITEMS: IMenuOption[] = [
   {
     title: 'HOME',
-    href: '/home',
+    href: '/',
   },
   {
     title: 'EXPERIENCE',

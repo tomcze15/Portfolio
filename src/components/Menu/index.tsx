@@ -3,6 +3,7 @@ import { FunctionComponent } from 'react';
 import styled, { css } from 'styled-components';
 import { MEDIA } from 'constants/items';
 import useMenu from './useMenu';
+import { NavLink } from 'react-router-dom';
 
 const flexCenter = css`
   align-items: center;
@@ -49,7 +50,7 @@ const ListItemWrapper = styled.li`
   ${flexCenter}
 `;
 
-const NavLinkWrapper = styled.a`
+const NavLinkWrapper = styled(NavLink)`
   text-decoration: none;
   color: ${({ theme }) => theme.menu.text.normal};
   &:hover {
@@ -57,7 +58,8 @@ const NavLinkWrapper = styled.a`
     cursor: pointer;
   }
   &.active {
-    background-color: ${({ theme }) => theme.menu.text.selected};
+    font-weight: bold;
+    color: ${({ theme }) => theme.menu.text.selected};
   }
 `;
 
@@ -85,7 +87,7 @@ const Menu: FunctionComponent = (): JSX.Element => {
         <ListContainer>
           {items.map(({ title, href }) => (
             <ListItemWrapper key={title}>
-              <NavLinkWrapper href={href}>{title}</NavLinkWrapper>
+              <NavLinkWrapper to={href}>{title}</NavLinkWrapper>
             </ListItemWrapper>
           ))}
         </ListContainer>

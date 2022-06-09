@@ -1,13 +1,25 @@
 import { IHeaderStyleProps } from 'common/types';
 import { FunctionComponent } from 'react';
 import styled, { css } from 'styled-components';
-import { MEDIA } from 'constants/items';
+import { LANGUAGE, MEDIA } from 'constants/items';
 import useMenu from './useMenu';
 import { NavLink } from 'react-router-dom';
 
 const flexCenter = css`
   align-items: center;
   justify-content: center;
+`;
+
+const ItemCommonBehavoiur = css`
+  color: ${({ theme }) => theme.menu.text.normal};
+  cursor: pointer;
+  &:hover {
+    color: ${({ theme }) => theme.menu.text.hover};
+  }
+  &.active {
+    font-weight: bold;
+    color: ${({ theme }) => theme.menu.text.selected};
+  }
 `;
 
 const WrapperMain = styled.header<IHeaderStyleProps>`
@@ -17,10 +29,9 @@ const WrapperMain = styled.header<IHeaderStyleProps>`
     isFixed ? theme.menu.background : 'transparent'};
   display: flex;
   justify-content: center;
-  position: sticky;
-  top: 0;
-  left: 0;
+  position: fixed;
   z-index: 1;
+  transition: 0.5s;
 `;
 
 const ContaierMain = styled.nav`
@@ -56,22 +67,29 @@ const ListItemWrapper = styled.li`
 
 const NavLinkWrapper = styled(NavLink)`
   text-decoration: none;
-  color: ${({ theme }) => theme.menu.text.normal};
-  &:hover {
-    color: ${({ theme }) => theme.menu.text.hover};
-    cursor: pointer;
-  }
-  &.active {
-    font-weight: bold;
-    color: ${({ theme }) => theme.menu.text.selected};
-  }
+  transition: 0.3s;
+  ${ItemCommonBehavoiur}
 `;
 
 const LanguageSection = styled.div`
-  height: 100%;
+  height: 24px;
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  color: ${({ theme }) => theme.menu.text.normal};
+
+  & span {
+    ${ItemCommonBehavoiur}
+  }
+`;
+
+const Divider = styled.div`
+  height: 100%;
+  width: 1px;
+  border-radius: 50px;
+  background-color: ${({ theme }) => theme.menu.text.normal};
 `;
 
 const ButtonSection = styled.div`
@@ -87,7 +105,11 @@ const Menu: FunctionComponent = (): JSX.Element => {
   return (
     <WrapperMain isFixed={fixedMenu}>
       <ContaierMain>
-        <LanguageSection />
+        <LanguageSection>
+          <span>{LANGUAGE.PL.toUpperCase()}</span>
+          <Divider />
+          <span>{LANGUAGE.EN.toUpperCase()}</span>
+        </LanguageSection>
         <ListContainer>
           {items.map(({ title, href }) => (
             <ListItemWrapper key={title}>

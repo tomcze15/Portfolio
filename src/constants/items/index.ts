@@ -1,13 +1,14 @@
-import { ENGLISH, POLISH } from 'locales';
+import translationPL from 'locales/pl';
+import translationEN from 'locales/en';
 
 export const LANGUAGE = {
   PL: {
     shortcut: 'pl',
-    translation: POLISH,
+    translation: translationPL,
   },
   EN: {
     shortcut: 'en',
-    translation: ENGLISH,
+    translation: translationEN,
   },
 };
 
@@ -20,7 +21,3 @@ export const OPTIONS_HREF = {
 };
 
 export const CV_TITLE = 'CV.pdf';
-
-export const INIT_i18N = {
-  resources: {},
-};

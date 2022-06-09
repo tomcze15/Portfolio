@@ -1,6 +1,8 @@
 import { ITheme } from 'common/types';
 import { createGlobalStyle } from 'styled-components';
 
+import COLORS from 'constants/colors';
+
 export default createGlobalStyle<ITheme>`
   * {
     box-sizing: border-box;
@@ -11,5 +13,6 @@ export default createGlobalStyle<ITheme>`
   #root {
     height: 100vh;
     width: 100vw;
+    background-color: ${COLORS.COLOR_1};
   }
 `;

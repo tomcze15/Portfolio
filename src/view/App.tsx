@@ -1,7 +1,8 @@
 import { FunctionComponent, StrictMode } from 'react';
 import { ThemeProvider } from 'styled-components';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import { GlobalStyle } from 'components';
+import { GlobalStyle, Routes } from 'components';
 import { DarkTheme } from 'themes';
 
 const App: FunctionComponent = (): JSX.Element => {
@@ -9,7 +10,9 @@ const App: FunctionComponent = (): JSX.Element => {
     <StrictMode>
       <GlobalStyle {...DarkTheme} />
       <ThemeProvider theme={DarkTheme}>
-        <div />
+        <Router>
+          <Routes />
+        </Router>
       </ThemeProvider>
     </StrictMode>
   );

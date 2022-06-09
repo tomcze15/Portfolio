@@ -13,7 +13,7 @@ const ButtonWrapper = styled.a`
   justify-content: center;
   align-items: center;
   gap: 13px;
-  font-size: 24px;
+  font-size: 22px;
   transition: 0.2s;
 
   background-color: ${({ theme }) => theme.button.background};

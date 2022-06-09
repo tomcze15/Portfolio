@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { IHeaderStyleProps } from 'common/types';
 import { LANGUAGE, MEDIA } from 'constants/items';
 import useMenu from './useMenu';
+import Button from 'components/Button';
 
 const flexCenter = css`
   align-items: center;
@@ -99,13 +100,12 @@ const ButtonSection = styled.div`
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 `;
 
 const Menu: FunctionComponent = (): JSX.Element => {
   const { items, fixedMenu } = useMenu();
-  const { t, i18n } = useTranslation();
-
-  // i18n.changeLanguage(LANGUAGE.PL.shortcut);
+  const { t } = useTranslation();
 
   return (
     <WrapperMain isFixed={fixedMenu}>
@@ -122,7 +122,9 @@ const Menu: FunctionComponent = (): JSX.Element => {
             </ListItemWrapper>
           ))}
         </ListContainer>
-        <ButtonSection />
+        <ButtonSection>
+          <Button>Pobierz CV</Button>
+        </ButtonSection>
       </ContaierMain>
     </WrapperMain>
   );

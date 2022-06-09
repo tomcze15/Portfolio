@@ -16,22 +16,14 @@ export interface ITheme extends DefaultTheme {
       normal: string;
       selected: string;
       hover: string;
-    },
+    };
     background: string;
-  },
+  };
 }
 
 export interface IButtonProps {
   children: string;
   pathToDownload?: string;
-  menu: {
-    text: {
-      normal: string;
-      selected: string;
-      hover: string;
-    };
-    background: string;
-  };
 }
 
 export interface IMenuOption {

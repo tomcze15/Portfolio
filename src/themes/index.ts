@@ -29,6 +29,10 @@ const DarkTheme: ITheme = {
       hover: COLORS.COLOR_3,
     },
   },
+  box: {
+    text:COLORS.COLOR_5,
+    background: COLORS.COLOR_2,
+  }
 };
 
 export { DarkTheme };

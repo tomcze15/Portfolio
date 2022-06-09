@@ -1,9 +1,11 @@
-import { IHeaderStyleProps } from 'common/types';
 import { FunctionComponent } from 'react';
+import { NavLink } from 'react-router-dom';
 import styled, { css } from 'styled-components';
+import { useTranslation } from 'react-i18next';
+
+import { IHeaderStyleProps } from 'common/types';
 import { LANGUAGE, MEDIA } from 'constants/items';
 import useMenu from './useMenu';
-import { NavLink } from 'react-router-dom';
 
 const flexCenter = css`
   align-items: center;
@@ -101,19 +103,22 @@ const ButtonSection = styled.div`
 
 const Menu: FunctionComponent = (): JSX.Element => {
   const { items, fixedMenu } = useMenu();
+  const { t, i18n } = useTranslation();
+
+  // i18n.changeLanguage(LANGUAGE.PL.shortcut);
 
   return (
     <WrapperMain isFixed={fixedMenu}>
       <ContaierMain>
         <LanguageSection>
-          <span>{LANGUAGE.PL.toUpperCase()}</span>
+          <span>{LANGUAGE.PL.shortcut.toUpperCase()}</span>
           <Divider />
-          <span>{LANGUAGE.EN.toUpperCase()}</span>
+          <span>{LANGUAGE.EN.shortcut.toUpperCase()}</span>
         </LanguageSection>
         <ListContainer>
           {items.map(({ title, href }) => (
             <ListItemWrapper key={title}>
-              <NavLinkWrapper to={href}>{title}</NavLinkWrapper>
+              <NavLinkWrapper to={href}>{t(title)}</NavLinkWrapper>
             </ListItemWrapper>
           ))}
         </ListContainer>

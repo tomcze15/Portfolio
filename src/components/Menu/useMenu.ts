@@ -7,8 +7,8 @@ export const useMenu = () => {
 
   const items = MENU_ITEMS;
   const languages = {
-    PL: LANGUAGE.PL.toUpperCase(),
-    EN: LANGUAGE.PL.toUpperCase(),
+    PL: LANGUAGE.PL.shortcut,
+    EN: LANGUAGE.EN.shortcut,
   };
 
   const updateFixedMenu = (): void => setFixedMenu(!!window.scrollY);

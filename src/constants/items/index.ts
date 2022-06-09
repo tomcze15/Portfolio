@@ -34,8 +34,8 @@ export const MENU_ITEMS: IMenuOption[] = [
     href: '/experience',
   },
   {
-    title: 'ABILITIES',
-    href: '/abilities',
+    title: 'ACCOMPLISHMENT',
+    href: '/accomplishment',
   },
   {
     title: 'CONTACT',

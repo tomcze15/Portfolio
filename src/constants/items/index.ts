@@ -3,7 +3,6 @@ export const LANGUAGE = {
   EN: 'en',
 };
 
-<<<<<<< HEAD
 export const OPTIONS_HREF = {
   HOME: '/',
   EXPERIENCE: '/experience',
@@ -11,6 +10,5 @@ export const OPTIONS_HREF = {
   CONTACT: '/contact',
   UNKNOWN: '*',
 };
-=======
+
 export const CV_TITLE = 'CV.pdf';
->>>>>>> 6d36c10 (Button works. No animation and shadow.)

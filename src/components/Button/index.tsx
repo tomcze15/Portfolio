@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 const ButtonWrapper = styled.a`
   height: 60px;
-  width: 217px;
+  width: fit-content;
   padding: 30px 20px;
   border-radius: 50px;
   display: flex;
@@ -14,6 +14,7 @@ const ButtonWrapper = styled.a`
   align-items: center;
   gap: 13px;
   font-size: 24px;
+  transition: 0.2s;
 
   background-color: ${({ theme }) => theme.button.background};
   color: ${({ theme }) => theme.button.text};
@@ -24,6 +25,9 @@ const ButtonWrapper = styled.a`
 
   &:hover {
     background-color: ${({ theme }) => theme.button.hoverBg};
+    -webkit-box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 1);
   }
 
   & svg {

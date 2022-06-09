@@ -12,11 +12,15 @@ const flexCenter = css`
 
 const WrapperMain = styled.header<IHeaderStyleProps>`
   width: 100%;
-  height: 150px;
-  background-color: transparent;
+  height: ${({ isFixed }) => (isFixed ? '90' : '150')}px;
+  background-color: ${({ isFixed, theme }) =>
+    isFixed ? theme.menu.background : 'transparent'};
   display: flex;
   justify-content: center;
-  position: fixed;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
 `;
 
 const ContaierMain = styled.nav`
@@ -81,7 +85,7 @@ const Menu: FunctionComponent = (): JSX.Element => {
   const { items, fixedMenu } = useMenu();
 
   return (
-    <WrapperMain>
+    <WrapperMain isFixed={fixedMenu}>
       <ContaierMain>
         <LanguageSection />
         <ListContainer>

@@ -6,4 +6,14 @@ export enum Theme {
 
 export interface ITheme extends DefaultTheme {
   id: Theme;
+  button: {
+    background: string;
+    text: string;
+    hoverBg: string;
+  };
+}
+
+export interface IButtonProps {
+  children: string;
+  pathToDownload?: string;
 }

@@ -10,3 +10,5 @@ export const OPTIONS_HREF = {
   CONTACT: '/contact',
   UNKNOWN: '*',
 };
+
+export const CV_TITLE = 'CV.pdf';

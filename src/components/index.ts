@@ -6,3 +6,4 @@ export { default as Home } from 'components/Home';
 export { default as Routes } from 'components/Routes';
 export { default as Page404 } from 'components/Page404';
 export { default as Button } from 'components/Button';
+export { default as Menu } from './Menu';

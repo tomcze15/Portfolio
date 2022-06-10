@@ -7,6 +7,15 @@ const DarkTheme: ITheme = {
     background: COLORS.COLOR_3,
     text: COLORS.COLOR_1,
     hoverBg: COLORS.COLOR_4,
+    shadow: COLORS.COLOR_1,
+  },
+  menu: {
+    text: {
+      normal: COLORS.COLOR_5,
+      selected: COLORS.COLOR_4,
+      hover: COLORS.COLOR_4,
+    },
+    background: COLORS.COLOR_2,
   },
 };
 

@@ -13,7 +13,7 @@ export default createGlobalStyle<ITheme>`
   body,
   #root {
     height: 100vh;
-    width: 100vw;
+    max-width: 100vw;
     background-color: ${COLORS.COLOR_1};
   }
 `;

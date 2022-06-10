@@ -25,9 +25,9 @@ const ButtonWrapper = styled.a`
 
   &:hover {
     background-color: ${({ theme }) => theme.button.hoverBg};
-    -webkit-box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 1);
-    box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 0px 0px 30px 0px ${({ theme }) => theme.button.shadow};
+    -moz-box-shadow: 0px 0px 30px 0px ${({ theme }) => theme.button.shadow};
+    box-shadow: 0px 0px 30px 0px ${({ theme }) => theme.button.shadow};
   }
 
   & svg {
@@ -40,7 +40,6 @@ const Button: FunctionComponent<IButtonProps> = ({
   children,
   pathToDownload,
 }): JSX.Element => {
-  console.log('href', pathToDownload);
   return (
     <ButtonWrapper href={pathToDownload + CV_TITLE} target="_blank" download>
       {children}

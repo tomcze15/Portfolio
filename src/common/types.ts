@@ -4,12 +4,18 @@ export enum Theme {
   DARK,
 }
 
+export enum Language {
+  PL,
+  EN,
+}
+
 export interface ITheme extends DefaultTheme {
   id: Theme;
   button: {
     background: string;
     text: string;
     hoverBg: string;
+    shadow: string;
   };
   menu: {
     text: {
@@ -37,4 +43,9 @@ export interface IMenuProps {
 
 export interface IHeaderStyleProps {
   isFixed?: boolean;
+}
+
+export interface ILanguageOptionProps {
+  lng: Language;
+  currentLng: Language;
 }

@@ -3,7 +3,7 @@ import translationEN from 'locales/en';
 import { IMenuOption } from 'common/types';
 import { customMediaQuery } from 'utils';
 
-export const LANGUAGE = {
+export const LANGUAGES = {
   PL: {
     shortcut: 'pl',
     translation: translationPL,

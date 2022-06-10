@@ -3,10 +3,15 @@ import { NavLink } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 import { useTranslation } from 'react-i18next';
 
-import { IHeaderStyleProps } from 'common/types';
-import { LANGUAGE, MEDIA } from 'constants/items';
+import {
+  IHeaderStyleProps,
+  ILanguageOptionProps,
+  Language,
+} from 'common/types';
+import { MEDIA, LANGUAGES } from 'constants/items';
 import useMenu from './useMenu';
 import Button from 'components/Button';
+import { useLanguage } from 'assets/hooks/useLanguage';
 
 const flexCenter = css`
   align-items: center;
@@ -63,7 +68,8 @@ const ListContainer = styled.ul`
 
 const ListItemWrapper = styled.li`
   height: 100%;
-  width: fit-content;
+  width: 100%;
+  white-space: nowrap;
   display: flex;
   ${flexCenter}
 `;
@@ -82,10 +88,21 @@ const LanguageSection = styled.div`
   align-items: center;
   gap: 10px;
   color: ${({ theme }) => theme.menu.text.normal};
+`;
 
-  & span {
-    ${ItemCommonBehavoiur}
+const Bold = css`
+  font-weight: bold;
+  color: ${({ theme }) => theme.menu.text.selected};
+`;
+
+const LanguageOption = styled.span<ILanguageOptionProps>`
+  color: ${({ theme }) => theme.menu.text.normal};
+  cursor: pointer;
+  &:hover {
+    color: ${({ theme }) => theme.menu.text.hover};
   }
+
+  ${({ currentLng, lng }) => (currentLng === lng ? Bold : '')};
 `;
 
 const Divider = styled.div`
@@ -105,15 +122,29 @@ const ButtonSection = styled.div`
 
 const Menu: FunctionComponent = (): JSX.Element => {
   const { items, fixedMenu } = useMenu();
+  const { changeLanguage, currentLng } = useLanguage();
+
   const { t } = useTranslation();
 
   return (
     <WrapperMain isFixed={fixedMenu}>
       <ContaierMain>
         <LanguageSection>
-          <span>{LANGUAGE.PL.shortcut.toUpperCase()}</span>
+          <LanguageOption
+            lng={Language.PL}
+            currentLng={currentLng()}
+            onClick={() => changeLanguage(Language.PL)}
+          >
+            {LANGUAGES.PL.shortcut.toUpperCase()}
+          </LanguageOption>
           <Divider />
-          <span>{LANGUAGE.EN.shortcut.toUpperCase()}</span>
+          <LanguageOption
+            lng={Language.EN}
+            currentLng={currentLng()}
+            onClick={() => changeLanguage(Language.EN)}
+          >
+            {LANGUAGES.EN.shortcut.toUpperCase()}
+          </LanguageOption>
         </LanguageSection>
         <ListContainer>
           {items.map(({ title, href }) => (

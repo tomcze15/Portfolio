@@ -8,7 +8,7 @@ import {
   ILanguageOptionProps,
   Language,
 } from 'common/types';
-import { MEDIA, LANGUAGES } from 'constants/items';
+import { MEDIA, LANGUAGES, ROUTES } from 'constants/items';
 import useMenu from './useMenu';
 import Button from 'components/Button';
 import { useLanguage } from 'assets/hooks/useLanguage';
@@ -121,7 +121,7 @@ const ButtonSection = styled.div`
 `;
 
 const Menu: FunctionComponent = (): JSX.Element => {
-  const { items, fixedMenu } = useMenu();
+  const { fixedMenu } = useMenu();
   const { changeLanguage, currentLng } = useLanguage();
 
   const { t } = useTranslation();
@@ -147,7 +147,7 @@ const Menu: FunctionComponent = (): JSX.Element => {
           </LanguageOption>
         </LanguageSection>
         <ListContainer>
-          {items.map(({ title, href }) => (
+          {ROUTES.map(({ title, href }) => (
             <ListItemWrapper key={title}>
               <NavLinkWrapper to={href}>{t(title)}</NavLinkWrapper>
             </ListItemWrapper>

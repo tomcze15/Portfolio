@@ -17,6 +17,18 @@ const DarkTheme: ITheme = {
     },
     background: COLORS.COLOR_2,
   },
+  footer: {
+    title: COLORS.COLOR_4,
+    text: {
+      normal: COLORS.COLOR_5,
+      selected: COLORS.COLOR_4,
+      hover: COLORS.COLOR_4,
+    },
+    icon: {
+      normal: COLORS.COLOR_4,
+      hover: COLORS.COLOR_3,
+    },
+  },
 };
 
 export { DarkTheme };

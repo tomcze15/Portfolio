@@ -104,12 +104,8 @@ const Bold = css`
 `;
 
 const LanguageOption = styled.span<ILanguageOptionProps>`
-  color: ${({ theme }) => theme.menu.text.normal};
-  cursor: pointer;
-  &:hover {
-    color: ${({ theme }) => theme.menu.text.hover};
-  }
-
+  transition: 0.3s;
+  ${ItemCommonBehavoiur}
   ${({ currentLng, lng }) => (currentLng === lng ? Bold : '')};
 `;
 

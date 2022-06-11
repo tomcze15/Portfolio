@@ -103,6 +103,7 @@ const SocialButton = styled.a`
 `;
 
 const ListContactItem = styled(ListItem)`
+  width: fit-content;
   img {
     transition: 0.3s;
     height: 23px;

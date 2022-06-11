@@ -154,7 +154,7 @@ const Menu: FunctionComponent = (): JSX.Element => {
           ))}
         </ListContainer>
         <ButtonSection>
-          <Button>Pobierz CV</Button>
+          <Button>{t('BUTTON.LONG')}</Button>
         </ButtonSection>
       </ContaierMain>
     </WrapperMain>

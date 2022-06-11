@@ -3,6 +3,7 @@ import COLORS from 'constants/colors';
 
 const DarkTheme: ITheme = {
   id: Theme.DARK,
+  text: COLORS.COLOR_5,
   button: {
     background: COLORS.COLOR_3,
     text: COLORS.COLOR_1,
@@ -30,9 +31,9 @@ const DarkTheme: ITheme = {
     },
   },
   box: {
-    text:COLORS.COLOR_5,
+    text: COLORS.COLOR_5,
     background: COLORS.COLOR_2,
-  }
+  },
 };
 
 export { DarkTheme };

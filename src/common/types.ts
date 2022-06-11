@@ -20,6 +20,7 @@ export type Direction = 'Left' | 'Right';
 
 export interface ITheme extends DefaultTheme {
   id: Theme;
+  text: string;
   button: {
     background: string;
     text: string;

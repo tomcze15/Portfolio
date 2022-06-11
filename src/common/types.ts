@@ -34,6 +34,10 @@ export interface ITheme extends DefaultTheme {
     };
     background: string;
   };
+  box: {
+    text: string;
+    background: string;
+  };
   footer: {
     title: string;
     text: {
@@ -87,4 +91,8 @@ export interface ISideProps {
 
 export interface ILayoutProps {
   children?: React.ReactNode;
+}
+
+export interface IBoxProps {
+  children: React.ReactNode;
 }

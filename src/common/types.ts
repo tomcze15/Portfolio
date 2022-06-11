@@ -1,3 +1,4 @@
+import React from 'react';
 import { DefaultTheme } from 'styled-components';
 
 export type SVGType = React.FunctionComponent<
@@ -82,4 +83,8 @@ export interface ILanguageOptionProps {
 
 export interface ISideProps {
   contectDirect?: Direction;
+}
+
+export interface ILayoutProps {
+  children?: React.ReactNode;
 }

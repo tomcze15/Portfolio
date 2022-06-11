@@ -153,8 +153,8 @@ const Footer: FunctionComponent = (): JSX.Element => {
         </Side>
       </ContainerLinksContact>
       <ContainerSocilas>
-        {SOCIALS.map((social) => (
-          <SocialButton href={social.href} target="_blank">
+        {SOCIALS.map((social, index) => (
+          <SocialButton key={index} href={social.href} target="_blank">
             <social.icon />
           </SocialButton>
         ))}

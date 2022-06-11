@@ -30,6 +30,12 @@ const ItemCommonBehavoiur = css`
   }
 `;
 
+const shadowMenu = css`
+  -webkit-box-shadow: 0px 8px 23px 3px ${({ theme }) => theme.menu.shadow};
+  -moz-box-shadow: 0px 8px 23px 3px ${({ theme }) => theme.menu.shadow};
+  box-shadow: 0px 8px 23px 3px ${({ theme }) => theme.menu.shadow};
+`;
+
 const WrapperMain = styled.header<IHeaderStyleProps>`
   width: 100%;
   height: ${({ isFixed }) => (isFixed ? '90' : '150')}px;
@@ -40,6 +46,8 @@ const WrapperMain = styled.header<IHeaderStyleProps>`
   position: fixed;
   z-index: 1;
   transition: 0.5s;
+
+  ${({ isFixed }) => (isFixed ? shadowMenu : '')}
 `;
 
 const ContaierMain = styled.nav`

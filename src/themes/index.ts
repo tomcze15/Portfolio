@@ -17,6 +17,7 @@ const DarkTheme: ITheme = {
       hover: COLORS.COLOR_4,
     },
     background: COLORS.COLOR_2,
+    shadow: COLORS.BLACK,
   },
   footer: {
     title: COLORS.COLOR_4,

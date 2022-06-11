@@ -34,6 +34,7 @@ export interface ITheme extends DefaultTheme {
       hover: string;
     };
     background: string;
+    shadow: string;
   };
   box: {
     text: string;

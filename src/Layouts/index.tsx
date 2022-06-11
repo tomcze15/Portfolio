@@ -5,7 +5,9 @@ import styled from 'styled-components';
 
 const LayoutWrapper = styled.main`
   height: 100%;
-  max-width: 1400px;
+  padding-top: 250px;
+  display: flex;
+  justify-content: center;
 `;
 
 const Layout: FunctionComponent<ILayoutProps> = ({ children }): JSX.Element => (

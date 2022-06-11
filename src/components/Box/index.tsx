@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   padding: 50px;
   color: ${({ theme }) => theme.box.text};
   background-color: ${({ theme }) => theme.box.background};
+  border-radius: 13px;
   display: flex;
   flex-direction: column;
   gap: 30px;

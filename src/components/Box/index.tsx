@@ -8,10 +8,12 @@ const Wrapper = styled.div`
   padding: 50px;
   color: ${({ theme }) => theme.box.text};
   background-color: ${({ theme }) => theme.box.background};
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 `;
 
 const Box: FunctionComponent<IBoxProps> = ({ children }): JSX.Element => {
-  console.log(children);
   return <Wrapper>{children}</Wrapper>;
 };
 

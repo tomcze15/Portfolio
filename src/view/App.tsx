@@ -11,11 +11,11 @@ const App: FunctionComponent = (): JSX.Element => {
     <StrictMode>
       <GlobalStyle {...DarkTheme} />
       <ThemeProvider theme={DarkTheme}>
-        <Layout>
-          <Router>
+        <Router>
+          <Layout>
             <Routes />
-          </Router>
-        </Layout>
+          </Layout>
+        </Router>
       </ThemeProvider>
     </StrictMode>
   );

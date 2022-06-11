@@ -10,6 +10,8 @@ import {
   LogoLinkedin,
 } from 'assets';
 
+export const MY_NAME = 'Tomasz Czerwiński';
+
 export const LANGUAGES = {
   PL: {
     shortcut: 'pl',

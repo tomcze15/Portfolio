@@ -4,6 +4,7 @@ import COLORS from 'constants/colors';
 const DarkTheme: ITheme = {
   id: Theme.DARK,
   text: COLORS.COLOR_5,
+  hello: COLORS.COLOR_4,
   button: {
     background: COLORS.COLOR_3,
     text: COLORS.COLOR_1,

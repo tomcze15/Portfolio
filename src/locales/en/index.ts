@@ -9,4 +9,8 @@ export default {
     P2: 'soon...',
     P3: 'soon...',
   },
+  BUTTON: {
+    LONG: 'Download CV',
+    SHORT: 'CV',
+  },
 };

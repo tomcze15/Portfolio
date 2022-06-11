@@ -29,7 +29,7 @@ export const ROUTES_HREF = {
   UNKNOWN: '*',
 };
 
-export const CV_TITLE = 'CV.pdf';
+export const CV_PATH = 'Tomasz-Czerwiński-CV.pdf';
 
 export const ROUTES: IRoute[] = [
   {

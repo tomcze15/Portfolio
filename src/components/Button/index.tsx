@@ -1,6 +1,5 @@
 import { IconDownload } from 'assets';
 import { IButtonProps } from 'common/types';
-import { CV_TITLE } from 'constants/items';
 import { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
@@ -41,7 +40,7 @@ const Button: FunctionComponent<IButtonProps> = ({
   pathToDownload,
 }): JSX.Element => {
   return (
-    <ButtonWrapper href={pathToDownload + CV_TITLE} target="_blank" download>
+    <ButtonWrapper href={pathToDownload} target="_blank" download>
       {children}
       <IconDownload />
     </ButtonWrapper>

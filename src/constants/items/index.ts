@@ -1,7 +1,14 @@
 import translationPL from 'locales/pl';
 import translationEN from 'locales/en';
-import { IMenuOption } from 'common/types';
+import { IContact, IRoute, ISocial } from 'common/types';
 import { customMediaQuery } from 'utils';
+import {
+  IconEmail,
+  IconPhone,
+  LogoFacebook,
+  LogoGithub,
+  LogoLinkedin,
+} from 'assets';
 
 export const LANGUAGES = {
   PL: {
@@ -14,7 +21,7 @@ export const LANGUAGES = {
   },
 };
 
-export const OPTIONS_HREF = {
+export const ROUTES_HREF = {
   HOME: '/',
   EXPERIENCE: '/experience',
   ACCOMPLISHMENT: '/accomplishment',
@@ -24,22 +31,48 @@ export const OPTIONS_HREF = {
 
 export const CV_TITLE = 'CV.pdf';
 
-export const MENU_ITEMS: IMenuOption[] = [
+export const ROUTES: IRoute[] = [
   {
     title: 'HOME',
-    href: '/',
+    href: ROUTES_HREF.HOME,
   },
   {
     title: 'EXPERIENCE',
-    href: '/experience',
+    href: ROUTES_HREF.EXPERIENCE,
   },
   {
     title: 'ACCOMPLISHMENT',
-    href: '/accomplishment',
+    href: ROUTES_HREF.ACCOMPLISHMENT,
   },
   {
     title: 'CONTACT',
-    href: '/contact',
+    href: ROUTES_HREF.CONTACT,
+  },
+];
+
+export const SOCIALS: ISocial[] = [
+  {
+    icon: LogoFacebook,
+    href: 'https://www.facebook.com/tomek.czerwinski.5',
+  },
+  {
+    icon: LogoLinkedin,
+    href: 'https://www.linkedin.com/in/tomasz-czerwiński/',
+  },
+  {
+    icon: LogoGithub,
+    href: 'https://github.com/tomcze15',
+  },
+];
+
+export const CONTACTS: IContact[] = [
+  {
+    icon: IconPhone,
+    text: '+48 691 820 555',
+  },
+  {
+    icon: IconEmail,
+    text: 'tomasz.czerwinski.1997@gmail.com',
   },
 ];
 

@@ -1,5 +1,11 @@
 import { DefaultTheme } from 'styled-components';
 
+export type SVGType = React.FunctionComponent<
+  React.SVGProps<SVGSVGElement> & {
+    title?: string | undefined;
+  }
+>;
+
 export enum Theme {
   DARK,
 }
@@ -8,6 +14,8 @@ export enum Language {
   PL,
   EN,
 }
+
+export type Direction = 'Left' | 'Right';
 
 export interface ITheme extends DefaultTheme {
   id: Theme;
@@ -25,6 +33,33 @@ export interface ITheme extends DefaultTheme {
     };
     background: string;
   };
+  footer: {
+    title: string;
+    text: {
+      normal: string;
+      selected: string;
+      hover: string;
+    };
+    icon: {
+      normal: string;
+      hover: string;
+    };
+  };
+}
+
+export interface IRoute {
+  title: string;
+  href: string;
+}
+
+export interface ISocial {
+  icon: SVGType;
+  href: string;
+}
+
+export interface IContact {
+  icon: string;
+  text: string;
 }
 
 export interface IButtonProps {
@@ -32,13 +67,8 @@ export interface IButtonProps {
   pathToDownload?: string;
 }
 
-export interface IMenuOption {
-  title: string;
-  href: string;
-}
-
 export interface IMenuProps {
-  options: IMenuOption[];
+  options: IRoute[];
 }
 
 export interface IHeaderStyleProps {
@@ -48,4 +78,8 @@ export interface IHeaderStyleProps {
 export interface ILanguageOptionProps {
   lng: Language;
   currentLng: Language;
+}
+
+export interface ISideProps {
+  contectDirect?: Direction;
 }

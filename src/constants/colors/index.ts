@@ -4,4 +4,5 @@ export default {
   COLOR_3: '#9A8C98',
   COLOR_4: '#C9ADA7',
   COLOR_5: '#F2E9E4',
+  BLACK: '#000000',
 };

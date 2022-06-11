@@ -8,7 +8,7 @@ import {
   ILanguageOptionProps,
   Language,
 } from 'common/types';
-import { MEDIA, LANGUAGES, ROUTES } from 'constants/items';
+import { MEDIA, LANGUAGES, ROUTES, CV_PATH } from 'constants/items';
 import useMenu from './useMenu';
 import Button from 'components/Button';
 import { useLanguage } from 'assets/hooks/useLanguage';
@@ -158,7 +158,7 @@ const Menu: FunctionComponent = (): JSX.Element => {
           ))}
         </ListContainer>
         <ButtonSection>
-          <Button>{t('BUTTON.LONG')}</Button>
+          <Button pathToDownload={CV_PATH}>{t('BUTTON.LONG')}</Button>
         </ButtonSection>
       </ContaierMain>
     </WrapperMain>

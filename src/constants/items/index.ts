@@ -6,11 +6,20 @@ import {
   IconEmail,
   IconPhone,
   LogoConfluence,
+  LogoCSS,
+  LogoCucumber,
   LogoFacebook,
   LogoGithub,
   LogoGitlab,
+  LogoHTML,
+  LogoJest,
   LogoJira,
   LogoLinkedin,
+  LogoLinux,
+  LogoReact,
+  LogoRxjs,
+  LogoTypeScript,
+  LogoVS,
 } from 'assets';
 
 export const MY_NAME = 'Tomasz Czerwiński';
@@ -90,13 +99,14 @@ export const MEDIA = {
   S: customMediaQuery(576),
 };
 
-export const TECHNOLOGIES = {
-  TOP: {
-    PART1: [LogoGitlab, LogoJira, LogoConfluence],
-  },
-  BOTTOm: {
-    PART1: [LogoGitlab, LogoJira],
-    PART2: [LogoGitlab, LogoJira],
-    PART3: [LogoGitlab, LogoJira],
-  },
-};
+export const TECHNOLOGIES = [
+  [
+    [LogoGitlab, LogoJira, LogoConfluence],
+    [LogoReact, LogoTypeScript, LogoRxjs],
+  ],
+  [
+    [LogoHTML, LogoCSS],
+    [LogoCucumber, LogoJest],
+    [LogoVS, LogoLinux],
+  ],
+];

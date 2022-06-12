@@ -77,6 +77,32 @@ const ListContainer = styled.ul`
   flex-direction: column;
 `;
 
+const TechContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding-top: 100px;
+`;
+
+const TechsTop = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+`;
+
+const LogosContainer = styled.div`
+  display: flex;
+  gap: 30px;
+
+  img,
+  svg {
+    height: 100px;
+  }
+`;
+
+const TechsBootm = styled.div``;
+
 const Experience: FunctionComponent = (): JSX.Element => {
   const { t } = useTranslation();
   const TasksProject2: string[] = t('PROJECTS.SECOND.LIST.ITEMS', {
@@ -127,6 +153,13 @@ const Experience: FunctionComponent = (): JSX.Element => {
           </TasksContainer>
           <img src={ImageList} alt="test" />
         </InfoImageContainer>
+        <TechContainer>
+          <span>{t('PROJECTS.FIRST.TECHNOLOGIES')}</span>
+          <TechsTop>
+            <LogosContainer></LogosContainer>
+            <LogosContainer></LogosContainer>
+          </TechsTop>
+        </TechContainer>
         <SmallInfoImageContainer>
           <img src={ImageClock} alt="test" />
           <span>3 {t('PROJECTS.FIRST.PERIOD')}</span>

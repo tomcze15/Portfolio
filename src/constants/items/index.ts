@@ -5,8 +5,11 @@ import { customMediaQuery } from 'utils';
 import {
   IconEmail,
   IconPhone,
+  LogoConfluence,
   LogoFacebook,
   LogoGithub,
+  LogoGitlab,
+  LogoJira,
   LogoLinkedin,
 } from 'assets';
 
@@ -85,4 +88,15 @@ export const MEDIA = {
   L: customMediaQuery(992),
   M: customMediaQuery(768),
   S: customMediaQuery(576),
+};
+
+export const TECHNOLOGIES = {
+  TOP: {
+    PART1: [LogoGitlab, LogoJira, LogoConfluence],
+  },
+  BOTTOm: {
+    PART1: [LogoGitlab, LogoJira],
+    PART2: [LogoGitlab, LogoJira],
+    PART3: [LogoGitlab, LogoJira],
+  },
 };

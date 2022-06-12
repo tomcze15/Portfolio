@@ -30,6 +30,7 @@ export default {
           'proposing custom UI solutions for the platform.',
         ],
       },
+      TECHNOLOGIES: 'Technologies I used',
       PERIOD: 'months',
     },
     SECOND: {

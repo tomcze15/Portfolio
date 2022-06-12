@@ -15,6 +15,6 @@ export default createGlobalStyle<ITheme>`
   #root {
     height: 100%;
     max-width: 100vw;
-    background-color: ${COLORS.COLOR_1};
+    background-color:${(s) => s.background};
   }
 `;

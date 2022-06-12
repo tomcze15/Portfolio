@@ -44,7 +44,7 @@ const WrapperMain = styled.header<IHeaderStyleProps>`
   display: flex;
   justify-content: center;
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   transition: 0.5s;
 
   ${({ isFixed }) => (isFixed ? shadowMenu : '')}

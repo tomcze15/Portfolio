@@ -30,6 +30,7 @@ export default {
           'proposing custom UI solutions for the platform.',
         ],
       },
+      PERIOD: 'months',
     },
     SECOND: {
       DESCRIPTION:

@@ -14,4 +14,37 @@ export default {
     LONG: 'Pobierz CV',
     SHORT: 'CV',
   },
+  PROJECTS: {
+    FIRST: {
+      DESCRIPTION:
+        'Moim pierwszym wyzwaniem po ukończeniu stażu w GlobalLogic było dołączenie do profesjonalnego zespołu należącego do wiodącej firmy niemieckiej zajmującej się platformą lokalizacyjną. Platforma ta łączyła treści lokalizacyjne i oprogramowania w celu obsługi panelu samochodów elektrycznych produkowanych u jedngo z  większych producentów w ameryce.',
+      LIST: {
+        DESCRIPTION: 'Moimi głównymi zadaniami było:',
+        ITEMS: [
+          'analiza błędów pod względem wydajności,',
+          'ocena, jakie czynniki wpływają na działanie funkcji,',
+          'analiza funkcji, które działają nieprawidłowo,',
+          'naprawa wdrożonych funkcji i tworzenie własnych,',
+          'poprawa wyglądu aplikacji,',
+          'aktualizowanie nieaktualnej dokumentacji,',
+          'proponowanie własnych rozwiązań UI dla platformy.',
+        ],
+      },
+      PERIOD: 'miesiące',
+    },
+    SECOND: {
+      DESCRIPTION:
+        'Aktualnie uczestnicze w projekcie dla jednego z największych dystrybutorów sprzętu motoryzacyjnego w Europie. Należę do zespołu, który zajmuje się między innymi rozwojem oraz utrzymaniem HMI dla najpopularniejszych marek samochodów na świecie za pomocą dedykowane oprogramowania dostarczanego od firmy. Głównymi zadaniami zespołu do którego należę to poprawa i korekta wygladu oraz działania interfejsu HMI.',
+      LIST: {
+        DESCRIPTION: 'Do moich głównych zadań aktualnie należy:',
+        ITEMS: [
+          'poprawa i korekta wyglądu interfejsu HMI,',
+          'analizowanie i testowanie aplikacji,',
+          'zgłaszanie oraz poprawa błędów,',
+          'stała komunikacja pomiędzy różnymi zespołami w celu estymowania różnych rozwiązań pod względem poprawy działania HMI oraz rozwiązywania błędów wynikających z różnych warstw HMI.',
+        ],
+      },
+      PERIOD: 'miesięcy',
+    },
+  },
 };

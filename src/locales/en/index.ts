@@ -14,4 +14,37 @@ export default {
     LONG: 'Download CV',
     SHORT: 'CV',
   },
+  PROJECTS: {
+    FIRST: {
+      DESCRIPTION:
+        'My first challenge after completing my internship at GlobalLogic was to join a professional team belonging to a leading German location-based platform company. This platform combined location-based content and software to support a panel of electric cars produced by a major manufacturer in the Americas.',
+      LIST: {
+        DESCRIPTION: 'My main tasks were:',
+        ITEMS: [
+          'performance error analysis,',
+          'evaluating what factors affect the function,',
+          'analysis of functions that are malfunctioning,',
+          'repairing implemented features and creating your own,',
+          'improving the appearance of the application,',
+          'updating outdated documentation,',
+          'proposing custom UI solutions for the platform.',
+        ],
+      },
+      PERIOD: 'months',
+    },
+    SECOND: {
+      DESCRIPTION:
+        "I am currently participating in a project for one of the largest distributors of automotive equipment in Europe. I am part of a team that develops and maintains HMI for the world's most popular car brands using dedicated software provided by the company. The main tasks of the team to which I belong are improving and correcting the appearance and operation of the HMI.",
+      LIST: {
+        DESCRIPTION: 'My main tasks currently include:',
+        ITEMS: [
+          'improving and correcting the appearance of the HMI,',
+          'analyzing and testing applications,',
+          'reporting and correcting errors,',
+          'Constant communication between different teams to estimate different solutions in terms of improving HMI performance and resolving errors arising from different HMI layers.',
+        ],
+      },
+      PERIOD: 'months',
+    },
+  },
 };

@@ -11,15 +11,11 @@ import { ReactComponent as LogoCPlusPlus } from 'assets/logo/C++.svg';
 import { ReactComponent as LogoCSS } from 'assets/logo/CSS3.svg';
 import { ReactComponent as LogoCucumber } from 'assets/logo/cucumber.svg';
 import { ReactComponent as LogoFigma } from 'assets/logo/Figma.svg';
-import { ReactComponent as LogoGimp } from 'assets/logo/gimp.svg';
 import { ReactComponent as LogoHTML } from 'assets/logo/HTML5.svg';
-import { ReactComponent as LogoKrita } from 'assets/logo/krita.svg';
 import { ReactComponent as LogoNextJS } from 'assets/logo/Nextjs.svg';
-import { ReactComponent as LogoQt } from 'assets/logo/Qt.svg';
 import { ReactComponent as LogoReact } from 'assets/logo/React.svg';
 import { ReactComponent as LogoTailwind } from 'assets/logo/tailwind.svg';
 import { ReactComponent as LogoLinux } from 'assets/logo/Tux.svg';
-import { ReactComponent as LogoTypeScript } from 'assets/logo/Typescript.svg';
 import { ReactComponent as LogoVS } from 'assets/logo/Visual_Studio.svg';
 import { ReactComponent as LogoWindows } from 'assets/logo/Windows.svg';
 import IconEmail from 'assets/icons/mail.png';
@@ -48,6 +44,10 @@ import LogoStorybook from 'assets/logo/storybook.png';
 import LogoStyledcomponents from 'assets/logo/styledcomponents.png';
 import LogoUK from 'assets/logo/The_United_Kingdom.png';
 import LogoUnity from 'assets/logo/unity.png';
+import LogoQt from 'assets/logo/Qt.png';
+import LogoTypeScript from 'assets/logo/Typescript.png';
+import LogoGimp from 'assets/logo/GIMP.png';
+import LogoKrita from 'assets/logo/Krita.png';
 
 export {
   IconCar,

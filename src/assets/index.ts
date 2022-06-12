@@ -4,7 +4,7 @@ import { ReactComponent as LogoFacebook } from 'assets/logo/facebook.svg';
 import { ReactComponent as LogoLinkedin } from 'assets/logo/linkedin.svg';
 import { ReactComponent as LogoGithub } from 'assets/logo/github.svg';
 import { ReactComponent as ImageCarNavi } from 'assets/images/car-a-b.svg';
-import { ReactComponent as LogoAdobeXC } from 'assets/logo/Adobe_XD.svg';
+import { ReactComponent as LogoAdobeXD } from 'assets/logo/Adobe_XD.svg';
 import { ReactComponent as LogoBlender } from 'assets/logo/Blender.svg';
 import { ReactComponent as LogoCSharp } from 'assets/logo/c-sharp.svg';
 import { ReactComponent as LogoCPlusPlus } from 'assets/logo/C++.svg';
@@ -76,7 +76,7 @@ export {
   LogoLinkedin,
   LogoJira,
   LogoConfluence,
-  LogoAdobeXC,
+  LogoAdobeXD,
   LogoBlender,
   LogoCSharp,
   LogoCPlusPlus,

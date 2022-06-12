@@ -42,7 +42,6 @@ const TitleWrapper = styled.div`
 
 export const Card: FunctionComponent<ICardPorps> = (props): JSX.Element => {
   const typeOfIcon = typeof props.icon;
-  console.log(typeOfIcon);
 
   return (
     <CardContainer>
@@ -54,7 +53,7 @@ export const Card: FunctionComponent<ICardPorps> = (props): JSX.Element => {
         )}
       </IconWrapper>
       <TitleWrapper>
-        <h5>{props.title}</h5>
+        <h5>{props.name}</h5>
       </TitleWrapper>
     </CardContainer>
   );

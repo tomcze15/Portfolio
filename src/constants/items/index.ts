@@ -5,9 +5,21 @@ import { customMediaQuery } from 'utils';
 import {
   IconEmail,
   IconPhone,
+  LogoConfluence,
+  LogoCSS,
+  LogoCucumber,
   LogoFacebook,
   LogoGithub,
+  LogoGitlab,
+  LogoHTML,
+  LogoJest,
+  LogoJira,
   LogoLinkedin,
+  LogoLinux,
+  LogoReact,
+  LogoRxjs,
+  LogoTypeScript,
+  LogoVS,
 } from 'assets';
 
 export const MY_NAME = 'Tomasz Czerwiński';
@@ -86,3 +98,15 @@ export const MEDIA = {
   M: customMediaQuery(768),
   S: customMediaQuery(576),
 };
+
+export const TECHNOLOGIES = [
+  [
+    [LogoGitlab, LogoJira, LogoConfluence],
+    [LogoReact, LogoTypeScript, LogoRxjs],
+  ],
+  [
+    [LogoHTML, LogoCSS],
+    [LogoCucumber, LogoJest],
+    [LogoVS, LogoLinux],
+  ],
+];

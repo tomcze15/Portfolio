@@ -6,10 +6,12 @@ import {
   ImageList,
   ImageScreen,
 } from 'assets';
+import { SVGType } from 'common/types';
 import Box from 'components/Box';
+import { TECHNOLOGIES } from 'constants/items';
 import { FunctionComponent } from 'react';
 import { useTranslation } from 'react-i18next';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const MainWrapper = styled.main`
   height: 100%;
@@ -77,6 +79,54 @@ const ListContainer = styled.ul`
   flex-direction: column;
 `;
 
+const TechContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 100px;
+
+  & span {
+    text-align: center;
+    width: 100%;
+  }
+`;
+
+const TechsSection = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+`;
+
+const LogosContainer = styled.div`
+  display: flex;
+  gap: 30px;
+
+  img,
+  svg {
+    height: 100px;
+  }
+`;
+
+const animHover = css`
+  transition: 0.3s;
+  transform: translateY(0px);
+  &:hover {
+    transform: translateY(-15px);
+  }
+`;
+
+const ImgWrapper = styled.img`
+  ${animHover}
+`;
+
+const SVGWrapper = styled.div`
+  height: fit-content;
+  width: fit-content;
+  ${animHover}
+`;
+
 const Experience: FunctionComponent = (): JSX.Element => {
   const { t } = useTranslation();
   const TasksProject2: string[] = t('PROJECTS.SECOND.LIST.ITEMS', {
@@ -127,6 +177,26 @@ const Experience: FunctionComponent = (): JSX.Element => {
           </TasksContainer>
           <img src={ImageList} alt="test" />
         </InfoImageContainer>
+        <TechContainer>
+          <span>{t('PROJECTS.FIRST.TECHNOLOGIES')}</span>
+          {TECHNOLOGIES.map((row) => (
+            <TechsSection>
+              {row.map((LogosGroup) => (
+                <LogosContainer>
+                  {LogosGroup.map((Logo: string | SVGType, index) =>
+                    typeof Logo === 'string' ? (
+                      <ImgWrapper key={index} src={Logo} alt="tech icon" />
+                    ) : (
+                      <SVGWrapper>
+                        <Logo key={index} />
+                      </SVGWrapper>
+                    )
+                  )}
+                </LogosContainer>
+              ))}
+            </TechsSection>
+          ))}
+        </TechContainer>
         <SmallInfoImageContainer>
           <img src={ImageClock} alt="test" />
           <span>3 {t('PROJECTS.FIRST.PERIOD')}</span>

@@ -104,3 +104,8 @@ export interface ILayoutProps {
 export interface IBoxProps {
   children: React.ReactNode;
 }
+
+export interface ICardPorps {
+  icon: SVGType | string;
+  title: string;
+}

@@ -96,12 +96,7 @@ const CircleRight = styled.div`
   width: 845px;
   border-radius: 1000px;
   background: ${({ theme }) => theme.background};
-  background: linear-gradient(
-    13deg,
-    rgba(34, 34, 59, 0) 30%,
-    rgba(78, 73, 93, 1) 65%,
-    rgba(154, 140, 152, 1) 100%
-  );
+  background: ${({ theme }) => theme.circles.right};
   position: absolute;
   transform: translateY(-1080px) translateX(430px);
 `;

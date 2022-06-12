@@ -1,8 +1,8 @@
 import { ReactComponent as IconDownload } from 'assets/icons/download.svg';
 import { ReactComponent as IconCar } from 'assets/icons/car.svg';
-import { ReactComponent as LogoFacebook } from 'assets/icons/facebook.svg';
-import { ReactComponent as LogoLinkedin } from 'assets/icons/linkedin.svg';
-import { ReactComponent as LogoGithub } from 'assets/icons/github.svg';
+import { ReactComponent as LogoFacebook } from 'assets/logo/facebook.svg';
+import { ReactComponent as LogoLinkedin } from 'assets/logo/linkedin.svg';
+import { ReactComponent as LogoGithub } from 'assets/logo/github.svg';
 import { ReactComponent as ImageCarNavi } from 'assets/images/car-a-b.svg';
 import IconEmail from 'assets/images/mail.png';
 import IconPhone from 'assets/images/phone.png';

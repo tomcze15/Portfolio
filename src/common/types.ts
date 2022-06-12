@@ -20,6 +20,7 @@ export type Direction = 'Left' | 'Right';
 
 export interface ITheme extends DefaultTheme {
   id: Theme;
+  background: string;
   text: string;
   hello: string;
   button: {
@@ -36,6 +37,10 @@ export interface ITheme extends DefaultTheme {
     };
     background: string;
     shadow: string;
+  };
+  circles: {
+    left: string;
+    right: string;
   };
   box: {
     text: string;

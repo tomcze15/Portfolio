@@ -17,7 +17,7 @@ const MainWrapper = styled.main`
   display: flex;
   flex-direction: column;
   font-size: 21px;
-  gap: 265px;
+  gap: 200px;
   max-width: 1400px;
   padding-bottom: 250px;
 `;
@@ -107,7 +107,7 @@ const Experience: FunctionComponent = (): JSX.Element => {
         </InfoImageContainer>
         <SmallInfoImageContainer>
           <img src={ImageClock} alt="test" />
-          <span>{t('PROJECTS.SECOND.PERIOD')}</span>
+          <span>8 {t('PROJECTS.SECOND.PERIOD')}</span>
         </SmallInfoImageContainer>
       </Box>
       <Box>
@@ -116,6 +116,21 @@ const Experience: FunctionComponent = (): JSX.Element => {
           <img src={ImageEarth} />
           <ImageCarNavi />
         </ImagesContainer>
+        <InfoImageContainer>
+          <TasksContainer>
+            <span>{t('PROJECTS.FIRST.LIST.DESCRIPTION')}</span>
+            <ListContainer>
+              {TasksProject1.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ListContainer>
+          </TasksContainer>
+          <img src={ImageList} alt="test" />
+        </InfoImageContainer>
+        <SmallInfoImageContainer>
+          <img src={ImageClock} alt="test" />
+          <span>3 {t('PROJECTS.FIRST.PERIOD')}</span>
+        </SmallInfoImageContainer>
       </Box>
     </MainWrapper>
   );

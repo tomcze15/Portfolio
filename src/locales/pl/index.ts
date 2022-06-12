@@ -30,6 +30,7 @@ export default {
           'proponowanie własnych rozwiązań UI dla platformy.',
         ],
       },
+      PERIOD: 'miesiące',
     },
     SECOND: {
       DESCRIPTION:
@@ -43,7 +44,7 @@ export default {
           'stała komunikacja pomiędzy różnymi zespołami w celu estymowania różnych rozwiązań pod względem poprawy działania HMI oraz rozwiązywania błędów wynikających z różnych warstw HMI.',
         ],
       },
-      PERIOD: '8 miesięcy',
+      PERIOD: 'miesięcy',
     },
   },
 };

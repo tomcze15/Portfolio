@@ -43,7 +43,7 @@ export default {
           'Constant communication between different teams to estimate different solutions in terms of improving HMI performance and resolving errors arising from different HMI layers.',
         ],
       },
-      PERIOD: '8 months',
+      PERIOD: 'months',
     },
   },
 };

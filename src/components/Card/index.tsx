@@ -22,8 +22,10 @@ const IconWrapper = styled.div`
   ${flexCenter}
   background-color: ${COLORS.COLOR_5};
 
-  & img {
-    height: 160px;
+  img,
+  svg {
+    max-height: 160px;
+    max-width: 280px;
   }
 `;
 

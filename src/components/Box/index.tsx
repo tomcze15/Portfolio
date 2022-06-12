@@ -12,7 +12,6 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 30px;
-  z-index: 22;
 `;
 
 const Box: FunctionComponent<IBoxProps> = ({ children }): JSX.Element => {

@@ -29,6 +29,9 @@ const DarkTheme: ITheme = {
     text: COLORS.COLOR_5,
     background: COLORS.COLOR_2,
   },
+  contact: {
+    text: COLORS.COLOR_4,
+  },
   card: {
     top: {
       background: COLORS.COLOR_5,

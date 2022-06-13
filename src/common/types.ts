@@ -46,6 +46,9 @@ export interface ITheme extends DefaultTheme {
     text: string;
     background: string;
   };
+  contact: {
+    text: string;
+  };
   card: {
     top: {
       background: string;

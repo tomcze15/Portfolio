@@ -1,5 +1,5 @@
 import { Card } from 'components';
-import { SKILLS } from 'constants/items';
+import { MEDIA, SKILLS } from 'constants/items';
 import { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
@@ -10,6 +10,11 @@ const MainWrapper = styled.div`
   padding-bottom: 250px;
   display: flex;
   justify-content: center;
+
+  ${MEDIA.L} {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 100px;
+  }
 `;
 
 const GridSkills = styled.div`
@@ -17,6 +22,18 @@ const GridSkills = styled.div`
   grid-template-columns: repeat(4, 1fr);
   gap: 50px;
   width: fit-content;
+
+  ${MEDIA.XXL} {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  ${MEDIA.XL} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  ${MEDIA.M} {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 const Accomplishment: FunctionComponent = (): JSX.Element => {

@@ -149,7 +149,7 @@ const ButtonSection = styled.div`
     display: none;
   }
 
-  ${MEDIA.L} {
+  ${MEDIA.XL} {
     & > a:nth-of-type(1) {
       display: none;
     }

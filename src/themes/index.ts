@@ -6,6 +6,9 @@ const DarkTheme: ITheme = {
   background: COLORS.COLOR_1,
   text: COLORS.COLOR_5,
   hello: COLORS.COLOR_4,
+  burgerButton: {
+    background: COLORS.COLOR_4,
+  },
   button: {
     background: COLORS.COLOR_3,
     text: COLORS.COLOR_1,

@@ -23,6 +23,9 @@ export interface ITheme extends DefaultTheme {
   background: string;
   text: string;
   hello: string;
+  burgerButton: {
+    background: string;
+  };
   button: {
     background: string;
     text: string;
@@ -124,6 +127,10 @@ export interface IBoxProps {
 
 export interface ISideProps {
   contectDirect?: Direction;
+}
+
+export interface IBurgerButtonProps {
+  onClick?: () => void;
 }
 
 export interface ICardPorps extends ISkill {}

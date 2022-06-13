@@ -75,6 +75,11 @@ export interface IContact {
   text: string;
 }
 
+export interface ISkill {
+  name: string;
+  icon: SVGType | string;
+}
+
 export interface IButtonProps {
   children: string;
   pathToDownload?: string;
@@ -105,7 +110,4 @@ export interface IBoxProps {
   children: React.ReactNode;
 }
 
-export interface ICardPorps {
-  icon: SVGType | string;
-  title: string;
-}
+export interface ICardPorps extends ISkill {}

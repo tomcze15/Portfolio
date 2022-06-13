@@ -5,21 +5,44 @@ import { customMediaQuery } from 'utils';
 import {
   IconEmail,
   IconPhone,
+  LogoAdobeXD,
+  LogoBlender,
   LogoConfluence,
+  LogoCPlusPlus,
+  LogoCSharp,
   LogoCSS,
   LogoCucumber,
+  LogoExpress,
   LogoFacebook,
+  LogoFigma,
   LogoGithub,
   LogoGitlab,
   LogoHTML,
   LogoJest,
   LogoJira,
+  LogoJS,
+  LogoKrita,
   LogoLinkedin,
   LogoLinux,
+  LogoMongoDB,
+  LogoMS365,
+  LogoMVC,
+  LogoNextJS,
+  LogoNode,
+  LogoPassportJS,
+  LogoPostgresSQL,
+  LogoPostman,
+  LogoQt,
   LogoReact,
   LogoRxjs,
+  LogoStorybook,
+  LogoStyledcomponents,
+  LogoTailwind,
   LogoTypeScript,
+  LogoUK,
+  LogoUnity,
   LogoVS,
+  LogoWindows,
 } from 'assets';
 
 export const MY_NAME = 'Tomasz Czerwiński';
@@ -109,4 +132,127 @@ export const TECHNOLOGIES = [
     [LogoCucumber, LogoJest],
     [LogoVS, LogoLinux],
   ],
+];
+
+export const SKILLS = [
+  {
+    name: 'React',
+    icon: LogoReact,
+  },
+  {
+    name: 'Typescript',
+    icon: LogoTypeScript,
+  },
+  {
+    name: 'HTML',
+    icon: LogoHTML,
+  },
+  {
+    name: 'CSS',
+    icon: LogoCSS,
+  },
+  {
+    name: 'JavaScript',
+    icon: LogoJS,
+  },
+  {
+    name: 'Styledcomponents',
+    icon: LogoStyledcomponents,
+  },
+  {
+    name: 'Tailwind',
+    icon: LogoTailwind,
+  },
+  {
+    name: 'RxJS',
+    icon: LogoRxjs,
+  },
+  {
+    name: 'StoryBook',
+    icon: LogoStorybook,
+  },
+  {
+    name: 'Figma',
+    icon: LogoFigma,
+  },
+  {
+    name: 'Adobe XD',
+    icon: LogoAdobeXD,
+  },
+  {
+    name: 'Git',
+    icon: LogoGithub,
+  },
+  {
+    name: 'NodeJs',
+    icon: LogoNode,
+  },
+  {
+    name: 'ExpressJS',
+    icon: LogoExpress,
+  },
+  {
+    name: 'MongoDB',
+    icon: LogoMongoDB,
+  },
+  {
+    name: 'PassportJS',
+    icon: LogoPassportJS,
+  },
+  {
+    name: 'English',
+    icon: LogoUK,
+  },
+  {
+    name: 'NextJs',
+    icon: LogoNextJS,
+  },
+  {
+    name: 'Postman',
+    icon: LogoPostman,
+  },
+  {
+    name: 'C++',
+    icon: LogoCPlusPlus,
+  },
+  {
+    name: 'C#',
+    icon: LogoCSharp,
+  },
+  {
+    name: 'Unity',
+    icon: LogoUnity,
+  },
+  {
+    name: 'Blender',
+    icon: LogoBlender,
+  },
+  {
+    name: 'Krita',
+    icon: LogoKrita,
+  },
+  {
+    name: 'Qt',
+    icon: LogoQt,
+  },
+  {
+    name: '.NET MVC',
+    icon: LogoMVC,
+  },
+  {
+    name: 'Windows',
+    icon: LogoWindows,
+  },
+  {
+    name: 'Linux',
+    icon: LogoLinux,
+  },
+  {
+    name: 'Office 365',
+    icon: LogoMS365,
+  },
+  {
+    name: 'PostgreSQL',
+    icon: LogoPostgresSQL,
+  },
 ];

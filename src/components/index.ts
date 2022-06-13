@@ -1,11 +1,12 @@
 export { default as GlobalStyle } from 'components/GlobalStyle';
-export { default as Accomplishment } from 'components/Accomplishment';
-export { default as Contact } from 'components/Contact';
-export { default as Experience } from 'components/Experience';
-export { default as Home } from 'components/Home';
+export { default as Accomplishment } from 'components/Pages/Accomplishment';
+export { default as Contact } from 'components/Pages/Contact';
+export { default as Experience } from 'components/Pages/Experience';
+export { default as Home } from 'components/Pages/Home';
 export { default as Routes } from 'components/Routes';
-export { default as Page404 } from 'components/Page404';
+export { default as Page404 } from 'components/Pages/Page404';
 export { default as Button } from 'components/Button';
 export { default as Menu } from 'components/Menu';
 export { default as Footer } from 'components/Footer';
 export { default as Box } from 'components/Box';
+export { default as Card } from 'components/Card';

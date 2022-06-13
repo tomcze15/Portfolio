@@ -11,9 +11,11 @@ const ItemCommonBehavoiur = css`
   display: flex;
   justify-content: inherit;
   cursor: pointer;
+
   &:hover {
     color: ${({ theme }) => theme.footer.text.hover};
   }
+
   &.active {
     color: ${({ theme }) => theme.footer.text.selected};
   }
@@ -89,11 +91,13 @@ const ContainerSocilas = styled.div`
 
 const SocialButton = styled.a`
   text-decoration: none;
+
   & svg {
     transition: 0.3s;
     height: 27px;
     width: 27px;
     fill: ${({ theme }) => theme.footer.icon.normal};
+
     &:hover {
       fill: ${({ theme }) => theme.footer.icon.hover};
       height: 30px;
@@ -104,7 +108,8 @@ const SocialButton = styled.a`
 
 const ListContactItem = styled(ListItem)`
   width: fit-content;
-  img {
+
+  & img {
     transition: 0.3s;
     height: 23px;
     width: 23px;
@@ -119,7 +124,7 @@ const ListContactItem = styled(ListItem)`
     }
   }
 
-  span {
+  & span {
     font-size: 18px;
     color: ${({ theme }) => theme.footer.text.normal};
   }

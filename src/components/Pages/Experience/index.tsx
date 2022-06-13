@@ -7,13 +7,13 @@ import {
   ImageScreen,
 } from 'assets';
 import { SVGType } from 'common/types';
-import Box from 'components/Box';
+import { Box } from 'components';
 import { TECHNOLOGIES } from 'constants/items';
 import { FunctionComponent } from 'react';
 import { useTranslation } from 'react-i18next';
 import styled, { css } from 'styled-components';
 
-const MainWrapper = styled.main`
+const MainWrapper = styled.div`
   height: 100%;
   width: 100%;
   display: flex;
@@ -31,10 +31,11 @@ const ImagesContainer = styled.div`
   align-items: center;
   gap: 60px;
 
-  img {
+  & img {
     height: 231px;
   }
-  svg {
+
+  & svg {
     height: 285px;
     width: 400px;
   }
@@ -103,8 +104,8 @@ const LogosContainer = styled.div`
   display: flex;
   gap: 30px;
 
-  img,
-  svg {
+  & img,
+  & svg {
     height: 100px;
   }
 `;
@@ -112,6 +113,7 @@ const LogosContainer = styled.div`
 const animHover = css`
   transition: 0.3s;
   transform: translateY(0px);
+
   &:hover {
     transform: translateY(-15px);
   }

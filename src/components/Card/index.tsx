@@ -56,7 +56,7 @@ const TitleWrapper = styled.div`
   }
 `;
 
-export const Card: FunctionComponent<ICardPorps> = (props): JSX.Element => {
+const Card: FunctionComponent<ICardPorps> = (props): JSX.Element => {
   const typeOfIcon = typeof props.icon;
 
   return (
@@ -74,3 +74,5 @@ export const Card: FunctionComponent<ICardPorps> = (props): JSX.Element => {
     </CardContainer>
   );
 };
+
+export default Card;

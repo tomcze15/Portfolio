@@ -20,19 +20,22 @@ const ContactContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 50px;
-  span {
+
+  & span {
     color: ${({ theme }) => theme.contact.text};
   }
-  img {
+
+  & img {
     transition: 0.5s;
     height: 80px;
     width: 80px;
   }
+
   &:hover {
     transition: 0.5s;
     gap: 40px;
     font-size: 66px;
-    img {
+    & img {
       height: 100px;
       width: 100px;
     }

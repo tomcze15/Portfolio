@@ -10,7 +10,7 @@ import {
 } from 'common/types';
 import { MEDIA, LANGUAGES, ROUTES, CV_PATH } from 'constants/items';
 import useMenu from './useMenu';
-import Button from 'components/Button';
+import { Button } from 'components';
 import { useLanguage } from 'assets/hooks/useLanguage';
 
 const flexCenter = css`
@@ -21,9 +21,11 @@ const flexCenter = css`
 const ItemCommonBehavoiur = css`
   color: ${({ theme }) => theme.menu.text.normal};
   cursor: pointer;
+
   &:hover {
     color: ${({ theme }) => theme.menu.text.hover};
   }
+
   &.active {
     font-weight: bold;
     color: ${({ theme }) => theme.menu.text.selected};
@@ -40,7 +42,7 @@ const WrapperMain = styled.header<IHeaderStyleProps>`
   width: 100%;
   height: ${({ isFixed }) => (isFixed ? '90' : '150')}px;
   background-color: ${({ isFixed, theme }) =>
-    isFixed ? theme.menu.background : 'transparent'};
+    isFixed ? theme.menu.background.normal : theme.menu.background.transparent};
   display: flex;
   justify-content: center;
   position: fixed;
@@ -65,9 +67,11 @@ const ListContainer = styled.ul`
   margin: 0;
   display: flex;
   ${flexCenter}
+
   ${MEDIA.XL} {
     gap: 20px;
   }
+
   ${MEDIA.XXL} {
     gap: 60px;
   }

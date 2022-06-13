@@ -78,7 +78,7 @@ const ListContainer = styled.ul`
   ${MEDIA.XL} {
     gap: 40px;
   }
-  ${MEDIA.M} {
+  ${MEDIA.L} {
     display: none;
   }
 `;
@@ -115,7 +115,7 @@ const LanguageSection = styled.div`
     padding-left: 50px;
   }
 
-  ${MEDIA.M} {
+  ${MEDIA.L} {
     display: none;
   }
 `;
@@ -158,7 +158,7 @@ const ButtonSection = styled.div`
     }
   }
 
-  ${MEDIA.M} {
+  ${MEDIA.L} {
     & > a:nth-of-type(2) {
       display: none;
     }

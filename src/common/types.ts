@@ -16,6 +16,8 @@ export enum Language {
   EN,
 }
 
+export type Direction = 'Left' | 'Right';
+
 export interface ITheme extends DefaultTheme {
   id: Theme;
   background: string;
@@ -112,6 +114,10 @@ export interface ILayoutProps {
 
 export interface IBoxProps {
   children: React.ReactNode;
+}
+
+export interface ISideProps {
+  contectDirect?: Direction;
 }
 
 export interface ICardPorps extends ISkill {}

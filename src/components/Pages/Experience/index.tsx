@@ -8,7 +8,7 @@ import {
 } from 'assets';
 import { SVGType } from 'common/types';
 import { Box } from 'components';
-import { TECHNOLOGIES } from 'constants/items';
+import { MEDIA, TECHNOLOGIES } from 'constants/items';
 import { FunctionComponent } from 'react';
 import { useTranslation } from 'react-i18next';
 import styled, { css } from 'styled-components';
@@ -18,10 +18,16 @@ const MainWrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-size: 21px;
   gap: 200px;
   max-width: 1400px;
   padding-bottom: 250px;
+
+  ${MEDIA.L} {
+    gap: 100px;
+    padding-bottom: 100px;
+  }
 `;
 
 const ImagesContainer = styled.div`
@@ -33,11 +39,19 @@ const ImagesContainer = styled.div`
 
   & img {
     height: 231px;
+    ${MEDIA.S} {
+      height: 180px;
+      width: 250px;
+    }
   }
 
   & svg {
     height: 285px;
     width: 400px;
+
+    ${MEDIA.L} {
+      display: none;
+    }
   }
 `;
 
@@ -61,6 +75,15 @@ const InfoImageContainer = styled.div`
   & ul {
     padding-left: 35px;
   }
+
+  ${MEDIA.L} {
+    flex-direction: column;
+    gap: 25px;
+    padding-bottom: 50px;
+    & ul {
+      padding-left: 0px;
+    }
+  }
 `;
 
 const SmallInfoImageContainer = styled(InfoImageContainer)`
@@ -69,15 +92,40 @@ const SmallInfoImageContainer = styled(InfoImageContainer)`
     width: 100px;
   }
   gap: 30px;
+
+  ${MEDIA.L} {
+    padding-bottom: 0px;
+  }
 `;
 
 const TasksContainer = styled.div`
-  width: 470px;
+  max-width: 470px;
+
+  ${MEDIA.L} {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & span {
+      padding-bottom: 30px;
+      font-weight: bold;
+      ${MEDIA.L} {
+        text-align: center;
+      }
+    }
+  }
 `;
 
 const ListContainer = styled.ul`
   display: flex;
   flex-direction: column;
+
+  ${MEDIA.L} {
+    text-align: center;
+    list-style-type: none;
+    gap: 10px;
+  }
 `;
 
 const TechContainer = styled.div`
@@ -91,6 +139,12 @@ const TechContainer = styled.div`
     text-align: center;
     width: 100%;
   }
+
+  ${MEDIA.L} {
+    gap: 70px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
 `;
 
 const TechsSection = styled.div`
@@ -98,6 +152,12 @@ const TechsSection = styled.div`
   display: flex;
   justify-content: center;
   gap: 120px;
+
+  ${MEDIA.L} {
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
 `;
 
 const LogosContainer = styled.div`
@@ -107,6 +167,10 @@ const LogosContainer = styled.div`
   & img,
   & svg {
     height: 100px;
+  }
+
+  ${MEDIA.L} {
+    flex-direction: column;
   }
 `;
 

@@ -1,6 +1,6 @@
 import { ISideProps } from 'common/types';
 import COLORS from 'constants/colors';
-import { CONTACTS, ROUTES, SOCIALS } from 'constants/items';
+import { CONTACTS, MEDIA, ROUTES, SOCIALS } from 'constants/items';
 import { FunctionComponent } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
@@ -32,6 +32,12 @@ const ContainerLinksContact = styled.div`
   height: 100%;
   display: flex;
   padding-bottom: 80px;
+
+  ${MEDIA.M} {
+    padding-top: 50px;
+    flex-direction: column;
+    gap: 70px;
+  }
 `;
 
 const Side = styled.div<ISideProps>`
@@ -44,6 +50,12 @@ const Side = styled.div<ISideProps>`
     contectDirect === 'Left' ? 'flex-start' : 'flex-end'};
   padding: ${({ contectDirect = 'Left' }) =>
     contectDirect === 'Left' ? '50px 0 0 30px' : '50px 30px 0 0'};
+
+  ${MEDIA.M} {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
 `;
 
 const Title = styled.h4`
@@ -54,6 +66,10 @@ const Title = styled.h4`
   color: ${({ theme }) => theme.footer.title};
   display: flex;
   justify-content: inherit;
+
+  ${MEDIA.M} {
+    padding-bottom: 15px;
+  }
 `;
 
 const ListContainer = styled.ul`
@@ -64,6 +80,10 @@ const ListContainer = styled.ul`
   justify-content: inherit;
   gap: 15px;
   list-style-type: none;
+
+  ${MEDIA.M} {
+    align-items: center;
+  }
 `;
 
 const ListItem = styled.li`

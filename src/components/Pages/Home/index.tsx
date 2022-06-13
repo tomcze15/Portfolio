@@ -1,6 +1,6 @@
 import { ImageTomasz } from 'assets';
 import { Box, Button } from 'components';
-import { CV_PATH, MY_NAME } from 'constants/items';
+import { CV_PATH, MEDIA, MY_NAME } from 'constants/items';
 import { FunctionComponent } from 'react';
 import { useTranslation } from 'react-i18next';
 import styled, { keyframes } from 'styled-components';
@@ -42,16 +42,21 @@ const MainWrapper = styled.div`
   width: 100%;
   max-width: 1400px;
   padding-bottom: 300px;
+
+  ${MEDIA.L} {
+    padding-bottom: 200px;
+  }
+
+  ${MEDIA.M} {
+    padding-bottom: 100px;
+  }
 `;
 
 const Front = styled.div`
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   z-index: 3;
-`;
-
-const Behind = styled.div`
-  position: relative;
-  z-index: 2;
 `;
 
 const ParagraphWrapper = styled.p`
@@ -64,7 +69,23 @@ const TomaszContainer = styled.div`
   height: 550px;
   width: 100%;
   display: flex;
-  gap: 200px;
+  gap: 220px;
+
+  ${MEDIA.XXL} {
+    padding-left: 70px;
+    gap: 110px;
+  }
+
+  ${MEDIA.L} {
+    gap: 10px;
+    padding-left: 20px;
+  }
+
+  ${MEDIA.L} {
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+  }
 `;
 
 const HelloContainer = styled.div`
@@ -72,6 +93,7 @@ const HelloContainer = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   font-size: 48px;
+  padding-bottom: 200px;
   animation: ${flyRight} 2s;
 
   & p:first-of-type {
@@ -82,14 +104,44 @@ const HelloContainer = styled.div`
     font-weight: bold;
     font-size: 64px;
     padding-bottom: 10px;
+
+    ${MEDIA.XL} {
+      font-size: 60px;
+    }
+
+    ${MEDIA.L} {
+      font-size: 52px;
+    }
+
+    ${MEDIA.S} {
+      text-align: center;
+    }
   }
-  padding-bottom: 200px;
+
+  ${MEDIA.XL} {
+    font-size: 42px;
+  }
+
+  ${MEDIA.L} {
+    font-size: 36px;
+    padding-bottom: 50px;
+    align-items: center;
+  }
 `;
 
 const PhotoContainer = styled.img`
   height: 550px;
-  width: 490px;
+  min-width: 490px;
   animation: ${flyLeft} 2s;
+
+  ${MEDIA.S} {
+    height: 400px;
+    min-width: 320px;
+  }
+`;
+
+const Behind = styled.div`
+  z-index: 2;
 `;
 
 const CircleRight = styled.div`
@@ -132,10 +184,10 @@ const Home: FunctionComponent = (): JSX.Element => {
           <ParagraphWrapper>{t('ABOUT_ME.P3')}</ParagraphWrapper>
         </Box>
       </Front>
-      <Behind>
+      {/* <Behind>
         <CircleRight />
         <CircleLeft />
-      </Behind>
+      </Behind> */}
     </MainWrapper>
   );
 };

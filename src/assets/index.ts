@@ -1,9 +1,9 @@
 import { ReactComponent as IconDownload } from 'assets/icons/download.svg';
 import { ReactComponent as IconCar } from 'assets/icons/car.svg';
+import { ReactComponent as IconBurger } from 'assets/icons/burger.svg';
 import { ReactComponent as LogoFacebook } from 'assets/logo/facebook.svg';
 import { ReactComponent as LogoLinkedin } from 'assets/logo/linkedin.svg';
 import { ReactComponent as LogoGithub } from 'assets/logo/github.svg';
-import { ReactComponent as ImageCarNavi } from 'assets/images/car-a-b.svg';
 import { ReactComponent as LogoAdobeXD } from 'assets/logo/Adobe_XD.svg';
 import { ReactComponent as LogoBlender } from 'assets/logo/Blender.svg';
 import { ReactComponent as LogoCSharp } from 'assets/logo/c-sharp.svg';
@@ -17,6 +17,7 @@ import { ReactComponent as LogoTailwind } from 'assets/logo/tailwind.svg';
 import { ReactComponent as LogoLinux } from 'assets/logo/Tux.svg';
 import { ReactComponent as LogoVS } from 'assets/logo/Visual_Studio.svg';
 import { ReactComponent as LogoWindows } from 'assets/logo/Windows.svg';
+import { ReactComponent as ImageCarNavi } from 'assets/images/car-a-b.svg';
 import IconEmail from 'assets/icons/mail.png';
 import IconPhone from 'assets/icons/phone.png';
 import ImageTomasz from 'assets/images/TC.png';
@@ -54,6 +55,7 @@ export {
   IconDownload,
   IconEmail,
   IconPhone,
+  IconBurger,
   LogoExpress,
   LogoJest,
   LogoJS,

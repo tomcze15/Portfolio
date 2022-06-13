@@ -16,8 +16,6 @@ export enum Language {
   EN,
 }
 
-export type Direction = 'Left' | 'Right';
-
 export interface ITheme extends DefaultTheme {
   id: Theme;
   background: string;
@@ -106,10 +104,6 @@ export interface IHeaderStyleProps {
 export interface ILanguageOptionProps {
   lng: Language;
   currentLng: Language;
-}
-
-export interface ISideProps {
-  contectDirect?: Direction;
 }
 
 export interface ILayoutProps {

@@ -35,7 +35,10 @@ export interface ITheme extends DefaultTheme {
       selected: string;
       hover: string;
     };
-    background: string;
+    background: {
+      normal: string;
+      transparent: string;
+    };
     shadow: string;
   };
   circles: {

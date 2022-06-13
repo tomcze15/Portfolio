@@ -1,6 +1,5 @@
 import { ImageTomasz } from 'assets';
-import Box from 'components/Box';
-import Button from 'components/Button';
+import { Box, Button } from 'components';
 import { CV_PATH, MY_NAME } from 'constants/items';
 import { FunctionComponent } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -38,7 +37,7 @@ const flyLeft = keyframes`
   }
 `;
 
-const MainWrapper = styled.main`
+const MainWrapper = styled.div`
   height: 100%;
   width: 100%;
   max-width: 1400px;
@@ -74,9 +73,11 @@ const HelloContainer = styled.div`
   justify-content: flex-end;
   font-size: 48px;
   animation: ${flyRight} 2s;
+
   & p:first-of-type {
     color: ${({ theme }) => theme.hello};
   }
+
   & p:last-of-type {
     font-weight: bold;
     font-size: 64px;

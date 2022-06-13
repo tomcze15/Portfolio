@@ -18,7 +18,10 @@ const DarkTheme: ITheme = {
       selected: COLORS.COLOR_4,
       hover: COLORS.COLOR_4,
     },
-    background: COLORS.COLOR_2,
+    background: {
+      normal: COLORS.COLOR_2,
+      transparent: COLORS.TRANSPARENT,
+    },
     shadow: COLORS.BLACK,
   },
   circles: {

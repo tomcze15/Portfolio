@@ -9,3 +9,4 @@ export { default as Button } from 'components/Button';
 export { default as Menu } from 'components/Menu';
 export { default as Footer } from 'components/Footer';
 export { default as Box } from 'components/Box';
+export { default as Card } from 'components/Card';

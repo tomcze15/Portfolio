@@ -1,9 +1,9 @@
-import { Card } from 'components/Card';
+import { Card } from 'components';
 import { SKILLS } from 'constants/items';
 import { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
-const MainWrapper = styled.main`
+const MainWrapper = styled.div`
   height: 100%;
   width: 100%;
   max-width: 1400px;

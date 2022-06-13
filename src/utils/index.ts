@@ -4,5 +4,5 @@ export const customMediaQuery = (
   maxWidth: number
 ): FlattenInterpolation<ThemeProps<any>> =>
   css`
-    @media (min-width: ${maxWidth}px)
+    @media (max-width: ${maxWidth}px)
   `;

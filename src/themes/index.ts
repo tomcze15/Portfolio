@@ -29,6 +29,16 @@ const DarkTheme: ITheme = {
     text: COLORS.COLOR_5,
     background: COLORS.COLOR_2,
   },
+  card: {
+    top: {
+      background: COLORS.COLOR_5,
+    },
+    bottom: {
+      background: COLORS.COLOR_2,
+      text: COLORS.COLOR_4,
+    },
+    shadow: COLORS.BLACK,
+  },
   footer: {
     title: COLORS.COLOR_4,
     text: {

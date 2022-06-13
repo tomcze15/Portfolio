@@ -46,6 +46,16 @@ export interface ITheme extends DefaultTheme {
     text: string;
     background: string;
   };
+  card: {
+    top: {
+      background: string;
+    };
+    bottom: {
+      background: string;
+      text: string;
+    };
+    shadow: string;
+  };
   footer: {
     title: string;
     text: {

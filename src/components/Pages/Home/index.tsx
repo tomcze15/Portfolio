@@ -141,7 +141,9 @@ const PhotoContainer = styled.img`
 `;
 
 const Behind = styled.div`
-  z-index: 2;
+  /* width: 100%;
+  height: 1500px; */
+  position: absolute;
 `;
 
 const CircleRight = styled.div`

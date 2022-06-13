@@ -47,8 +47,8 @@ const DarkTheme: ITheme = {
       hover: COLORS.COLOR_4,
     },
     icon: {
-      normal: COLORS.COLOR_4,
-      hover: COLORS.COLOR_3,
+      normal: COLORS.COLOR_3,
+      hover: COLORS.COLOR_4,
     },
   },
 };

@@ -10,7 +10,7 @@ import {
 } from 'common/types';
 import { MEDIA, LANGUAGES, ROUTES, CV_PATH } from 'constants/items';
 import useMenu from './useMenu';
-import { Button } from 'components';
+import { Button, BurgerButton } from 'components';
 import { useLanguage } from 'assets/hooks/useLanguage';
 
 const flexCenter = css`
@@ -56,8 +56,13 @@ const ContaierMain = styled.nav`
   width: 1400px;
   padding: 0 20px;
   height: 100%;
+  font-size: 20px;
   display: flex;
   ${flexCenter}
+
+  ${MEDIA.XL} {
+    padding: 0 50px;
+  }
 `;
 
 const ListContainer = styled.ul`
@@ -66,16 +71,16 @@ const ListContainer = styled.ul`
   padding: 0;
   margin: 0;
   display: flex;
+  gap: 60px;
+  list-style-type: none;
   ${flexCenter}
 
   ${MEDIA.XL} {
-    gap: 20px;
+    gap: 40px;
   }
-
-  ${MEDIA.XXL} {
-    gap: 60px;
+  ${MEDIA.M} {
+    display: none;
   }
-  list-style-type: none;
 `;
 
 const ListItemWrapper = styled.li`
@@ -98,8 +103,21 @@ const LanguageSection = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  font-size: 18px;
   gap: 10px;
   color: ${({ theme }) => theme.menu.text.normal};
+
+  ${MEDIA.XXL} {
+    padding-left: 30px;
+  }
+
+  ${MEDIA.XL} {
+    padding-left: 50px;
+  }
+
+  ${MEDIA.M} {
+    display: none;
+  }
 `;
 
 const Bold = css`
@@ -126,10 +144,32 @@ const ButtonSection = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  & > button,
+  & > a:nth-of-type(2) {
+    display: none;
+  }
+
+  ${MEDIA.L} {
+    & > a:nth-of-type(1) {
+      display: none;
+    }
+    & > a:nth-of-type(2) {
+      display: flex;
+    }
+  }
+
+  ${MEDIA.M} {
+    & > a:nth-of-type(2) {
+      display: none;
+    }
+    & > button {
+      display: flex;
+    }
+  }
 `;
 
 const Menu: FunctionComponent = (): JSX.Element => {
-  const { fixedMenu } = useMenu();
+  const { fixedMenu, mobileMenu } = useMenu();
   const { changeLanguage, currentLng } = useLanguage();
 
   const { t } = useTranslation();
@@ -163,6 +203,8 @@ const Menu: FunctionComponent = (): JSX.Element => {
         </ListContainer>
         <ButtonSection>
           <Button pathToDownload={CV_PATH}>{t('BUTTON.LONG')}</Button>
+          <Button pathToDownload={CV_PATH}>{'CV'}</Button>
+          <BurgerButton />
         </ButtonSection>
       </ContaierMain>
     </WrapperMain>

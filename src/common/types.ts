@@ -99,7 +99,7 @@ export interface ISkill {
   icon: SVGType | string;
 }
 
-export interface IButtonProps {
+export interface INavButtonProps {
   children: string;
   pathToDownload?: string;
 }
@@ -129,7 +129,7 @@ export interface ISideProps {
   contectDirect?: Direction;
 }
 
-export interface IBurgerButtonProps {
+export interface IButtonProps {
   onClick?: () => void;
 }
 

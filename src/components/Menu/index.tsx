@@ -10,7 +10,7 @@ import {
 } from 'common/types';
 import { MEDIA, LANGUAGES, ROUTES, CV_PATH } from 'constants/items';
 import useMenu from './useMenu';
-import { Button, BurgerButton } from 'components';
+import { Button, BurgerButton, MobileMenu } from 'components';
 import { useLanguage } from 'assets/hooks/useLanguage';
 
 const flexCenter = css`
@@ -168,8 +168,19 @@ const ButtonSection = styled.div`
   }
 `;
 
+const MobileMenuWrapper = styled.div`
+  display: none;
+  ${MEDIA.XL} {
+    display: inline;
+  }
+
+  ${MEDIA.L} {
+    display: inline;
+  }
+`;
+
 const Menu: FunctionComponent = (): JSX.Element => {
-  const { fixedMenu, mobileMenu } = useMenu();
+  const { fixedMenu, mobileMenu, toggleMobileMenu } = useMenu();
   const { changeLanguage, currentLng } = useLanguage();
 
   const { t } = useTranslation();
@@ -204,9 +215,12 @@ const Menu: FunctionComponent = (): JSX.Element => {
         <ButtonSection>
           <Button pathToDownload={CV_PATH}>{t('BUTTON.LONG')}</Button>
           <Button pathToDownload={CV_PATH}>{'CV'}</Button>
-          <BurgerButton />
+          <BurgerButton onClick={toggleMobileMenu} />
         </ButtonSection>
       </ContaierMain>
+      <MobileMenuWrapper>
+        {mobileMenu ? <MobileMenu onClick={toggleMobileMenu} /> : null}
+      </MobileMenuWrapper>
     </WrapperMain>
   );
 };

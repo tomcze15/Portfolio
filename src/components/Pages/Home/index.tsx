@@ -1,9 +1,10 @@
-import { ImageTomasz } from 'assets';
-import { Box, Button } from 'components';
-import { CV_PATH, MEDIA, MY_NAME } from 'constants/items';
 import { FunctionComponent } from 'react';
 import { useTranslation } from 'react-i18next';
 import styled, { keyframes } from 'styled-components';
+
+import { ImageTomasz } from 'assets';
+import { Box, Button, PageTitle } from 'components';
+import { CV_PATH, MEDIA, MY_NAME } from 'constants/items';
 
 const flyRight = keyframes`
   0% {
@@ -190,6 +191,7 @@ const Home: FunctionComponent = (): JSX.Element => {
 
   return (
     <MainWrapper>
+      <PageTitle title={t('HOME')} />
       <Front>
         <TomaszContainer>
           <HelloContainer>

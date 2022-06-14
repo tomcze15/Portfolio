@@ -7,7 +7,7 @@ import {
   ImageScreen,
 } from 'assets';
 import { SVGType } from 'common/types';
-import { Box } from 'components';
+import { Box, PageTitle } from 'components';
 import { MEDIA, TECHNOLOGIES } from 'constants/items';
 import { FunctionComponent } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -204,6 +204,7 @@ const Experience: FunctionComponent = (): JSX.Element => {
 
   return (
     <MainWrapper>
+      <PageTitle title={t('EXPERIENCE')} />
       <Box>
         <Description>{t('PROJECTS.SECOND.DESCRIPTION')}</Description>
         <ImagesContainer>

@@ -1,6 +1,7 @@
-import { Box } from 'components';
+import { Box, PageTitle } from 'components';
 import { CONTACTS, MEDIA } from 'constants/items';
 import { FunctionComponent } from 'react';
+import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 
 const MainWrapper = styled.div`
@@ -89,8 +90,11 @@ const ContactContainer = styled.div`
 `;
 
 const Contact: FunctionComponent = (): JSX.Element => {
+  const { t } = useTranslation();
+
   return (
     <MainWrapper>
+      <PageTitle title={t('CONTACT')} />
       {CONTACTS.map(({ icon, text }, index) => (
         <Box key={index}>
           <ContactContainer>

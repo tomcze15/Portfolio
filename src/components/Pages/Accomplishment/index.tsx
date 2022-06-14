@@ -1,8 +1,10 @@
-import { Card } from 'components';
-import SearchButton from 'components/SearchButton';
-import { MEDIA, SKILLS } from 'constants/items';
-import { FunctionComponent, useEffect, useState } from 'react';
+import { FunctionComponent, useState } from 'react';
 import styled from 'styled-components';
+
+import { Card, SearchButton, PageTitle } from 'components';
+import { MEDIA, SKILLS } from 'constants/items';
+import { t } from 'i18next';
+import { useTranslation } from 'react-i18next';
 
 const MainWrapper = styled.div`
   height: 100%;
@@ -16,10 +18,11 @@ const MainWrapper = styled.div`
 `;
 
 const GridSkills = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 50px;
   width: fit-content;
+  display: grid;
+  gap: 50px;
+
+  grid-template-columns: repeat(4, 1fr);
 
   ${MEDIA.XXL} {
     grid-template-columns: repeat(3, 1fr);
@@ -36,6 +39,7 @@ const GridSkills = styled.div`
 
 const Accomplishment: FunctionComponent = (): JSX.Element => {
   const [searchfield, setSearchfield] = useState<string>('');
+  const { t } = useTranslation();
 
   const handleInput = (e: string) => {
     setSearchfield(e);
@@ -47,6 +51,7 @@ const Accomplishment: FunctionComponent = (): JSX.Element => {
 
   return (
     <MainWrapper>
+      <PageTitle title={t('ACCOMPLISHMENT')} />
       <SearchButton onChange={handleInput} />
       <GridSkills>
         {filteredSkills.map((skill) => (

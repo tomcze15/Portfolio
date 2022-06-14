@@ -12,3 +12,5 @@ export { default as Footer } from 'components/Footer';
 export { default as Box } from 'components/Box';
 export { default as Card } from 'components/Card';
 export { default as BurgerButton } from 'components/BurgerButton';
+export { default as SearchButton } from 'components/SearchButton';
+export { default as PageTitle } from 'components/PageTitle';

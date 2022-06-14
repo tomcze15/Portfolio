@@ -142,3 +142,7 @@ export interface ICardPorps extends ISkill {}
 export interface IInputProps {
   onChange?: (e: string) => void;
 }
+
+export interface IPageTitleProps {
+  title: string;
+}

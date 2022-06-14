@@ -28,8 +28,6 @@ const MainWrapper = styled.div`
 
   ${MEDIA.S} {
     font-size: 18px;
-    padding-bottom: 500px;
-    gap: 50px;
   }
 `;
 
@@ -86,7 +84,6 @@ const ContactContainer = styled.div`
   }
 
   ${MEDIA.L} {
-    flex-direction: column;
     gap: 20px;
   }
 `;

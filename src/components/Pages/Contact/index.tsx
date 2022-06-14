@@ -60,12 +60,24 @@ const ContactContainer = styled.div`
   }
 
   &:hover {
-    transition: 0.5s;
-    gap: 40px;
-    font-size: 66px;
-    & img {
-      height: 100px;
-      width: 100px;
+    @media (min-width: 993px) {
+      transition: 0.5s;
+      gap: 40px;
+      font-size: 66px;
+
+      ${MEDIA.XL} {
+        font-size: 36px;
+      }
+
+      & img {
+        height: 100px;
+        width: 100px;
+
+        ${MEDIA.XL} {
+          height: 80px;
+          width: 80px;
+        }
+      }
     }
   }
 

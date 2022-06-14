@@ -15,6 +15,10 @@ const DarkTheme: ITheme = {
     hoverBg: COLORS.COLOR_4,
     shadow: COLORS.COLOR_1,
   },
+  mobileMenu: {
+    background: COLORS.DIMMED,
+    buttonBg: COLORS.COLOR_4,
+  },
   menu: {
     text: {
       normal: COLORS.COLOR_5,

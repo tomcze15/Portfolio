@@ -42,7 +42,6 @@ const MainWrapper = styled.div`
   width: 100%;
   max-width: 1400px;
   padding-bottom: 300px;
-  overflow: hidden;
 
   ${MEDIA.L} {
     padding-bottom: 200px;

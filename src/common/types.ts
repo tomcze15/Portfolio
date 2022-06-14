@@ -32,6 +32,10 @@ export interface ITheme extends DefaultTheme {
     hoverBg: string;
     shadow: string;
   };
+  mobileMenu: {
+    background: string;
+    buttonBg: string;
+  };
   menu: {
     text: {
       normal: string;

@@ -1,5 +1,5 @@
 import { IconBurger } from 'assets';
-import { IBurgerButtonProps } from 'common/types';
+import { IButtonProps } from 'common/types';
 import { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
@@ -19,7 +19,7 @@ const Wrapper = styled.button`
   }
 `;
 
-const BurgerButton: FunctionComponent<IBurgerButtonProps> = ({
+const BurgerButton: FunctionComponent<IButtonProps> = ({
   onClick,
 }): JSX.Element => {
   return (

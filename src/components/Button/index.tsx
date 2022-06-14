@@ -1,5 +1,5 @@
 import { IconDownload } from 'assets';
-import { IButtonProps } from 'common/types';
+import { INavButtonProps } from 'common/types';
 import { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
@@ -35,7 +35,7 @@ const ButtonWrapper = styled.a`
   }
 `;
 
-const Button: FunctionComponent<IButtonProps> = ({
+const Button: FunctionComponent<INavButtonProps> = ({
   children,
   pathToDownload,
 }): JSX.Element => {

@@ -42,6 +42,7 @@ const MainWrapper = styled.div`
   width: 100%;
   max-width: 1400px;
   padding-bottom: 300px;
+  overflow: hidden;
 
   ${MEDIA.L} {
     padding-bottom: 200px;
@@ -56,6 +57,7 @@ const Front = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   z-index: 3;
 `;
 
@@ -78,10 +80,7 @@ const TomaszContainer = styled.div`
 
   ${MEDIA.L} {
     gap: 10px;
-    padding-left: 20px;
-  }
-
-  ${MEDIA.L} {
+    padding-left: 0;
     flex-direction: column;
     align-items: center;
     height: fit-content;
@@ -141,9 +140,18 @@ const PhotoContainer = styled.img`
 `;
 
 const Behind = styled.div`
-  /* width: 100%;
-  height: 1500px; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
   position: absolute;
+  overflow: hidden;
+
+  ${MEDIA.XL} {
+    height: 1500px;
+  }
 `;
 
 const CircleRight = styled.div`
@@ -153,7 +161,11 @@ const CircleRight = styled.div`
   background: ${({ theme }) => theme.background};
   background: ${({ theme }) => theme.circles.right};
   position: absolute;
-  transform: translateY(-1080px) translateX(430px);
+  transform: translateY(180px) translateX(180px);
+
+  ${MEDIA.L} {
+    transform: translateY(410px) translateX(180px);
+  }
 `;
 
 const CircleLeft = styled.div`
@@ -163,7 +175,15 @@ const CircleLeft = styled.div`
   background: ${({ theme }) => theme.background};
   background: ${({ theme }) => theme.circles.left};
   position: absolute;
-  transform: translateY(-1060px) translateX(-370px);
+  transform: translateY(210px) translateX(-540px);
+
+  ${MEDIA.XL} {
+    transform: translateY(210px) translateX(-340px) rotate(180deg);
+  }
+
+  ${MEDIA.L} {
+    transform: translateY(310px) translateX(-340px) rotate(180deg);
+  }
 `;
 
 const Home: FunctionComponent = (): JSX.Element => {
@@ -186,10 +206,10 @@ const Home: FunctionComponent = (): JSX.Element => {
           <ParagraphWrapper>{t('ABOUT_ME.P3')}</ParagraphWrapper>
         </Box>
       </Front>
-      {/* <Behind>
-        <CircleRight />
+      <Behind>
         <CircleLeft />
-      </Behind> */}
+        <CircleRight />
+      </Behind>
     </MainWrapper>
   );
 };

@@ -245,16 +245,16 @@ const Experience: FunctionComponent = (): JSX.Element => {
         </InfoImageContainer>
         <TechContainer>
           <span>{t('PROJECTS.FIRST.TECHNOLOGIES')}</span>
-          {TECHNOLOGIES.map((row) => (
-            <TechsSection>
-              {row.map((LogosGroup) => (
-                <LogosContainer>
+          {TECHNOLOGIES.map((row, index) => (
+            <TechsSection key={index}>
+              {row.map((LogosGroup, i) => (
+                <LogosContainer key={i}>
                   {LogosGroup.map((Logo: string | SVGType, index) =>
                     typeof Logo === 'string' ? (
                       <ImgWrapper key={index} src={Logo} alt="tech icon" />
                     ) : (
-                      <SVGWrapper>
-                        <Logo key={index} />
+                      <SVGWrapper key={index}>
+                        <Logo />
                       </SVGWrapper>
                     )
                   )}

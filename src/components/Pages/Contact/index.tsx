@@ -91,8 +91,8 @@ const ContactContainer = styled.div`
 const Contact: FunctionComponent = (): JSX.Element => {
   return (
     <MainWrapper>
-      {CONTACTS.map(({ icon, text }) => (
-        <Box>
+      {CONTACTS.map(({ icon, text }, index) => (
+        <Box key={index}>
           <ContactContainer>
             <img src={icon} />
             <span>{text}</span>

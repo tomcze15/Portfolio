@@ -1,6 +1,7 @@
 import { Card } from 'components';
+import SearchButton from 'components/SearchButton';
 import { MEDIA, SKILLS } from 'constants/items';
-import { FunctionComponent } from 'react';
+import { FunctionComponent, useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 const MainWrapper = styled.div`
@@ -9,12 +10,9 @@ const MainWrapper = styled.div`
   max-width: 1400px;
   padding-bottom: 250px;
   display: flex;
-  justify-content: center;
-
-  ${MEDIA.L} {
-    grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 100px;
-  }
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
 `;
 
 const GridSkills = styled.div`
@@ -37,10 +35,21 @@ const GridSkills = styled.div`
 `;
 
 const Accomplishment: FunctionComponent = (): JSX.Element => {
+  const [searchfield, setSearchfield] = useState<string>('');
+
+  const handleInput = (e: string) => {
+    setSearchfield(e);
+  };
+
+  const filteredSkills = SKILLS.filter((skill) =>
+    skill.name.toLowerCase().includes(searchfield.toLowerCase())
+  );
+
   return (
     <MainWrapper>
+      <SearchButton onChange={handleInput} />
       <GridSkills>
-        {SKILLS.map((skill) => (
+        {filteredSkills.map((skill) => (
           <Card key={skill.name} name={skill.name} icon={skill.icon} />
         ))}
       </GridSkills>

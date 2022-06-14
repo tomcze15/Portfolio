@@ -15,6 +15,7 @@ import {
   LogoExpress,
   LogoFacebook,
   LogoFigma,
+  LogoGimp,
   LogoGithub,
   LogoGitlab,
   LogoHTML,
@@ -34,6 +35,7 @@ import {
   LogoPostman,
   LogoQt,
   LogoReact,
+  LogoRedux,
   LogoRxjs,
   LogoStorybook,
   LogoStyledcomponents,
@@ -160,6 +162,10 @@ export const SKILLS = [
     icon: LogoStyledcomponents,
   },
   {
+    name: 'Redux',
+    icon: LogoRedux,
+  },
+  {
     name: 'Tailwind',
     icon: LogoTailwind,
   },
@@ -226,6 +232,10 @@ export const SKILLS = [
   {
     name: 'Blender',
     icon: LogoBlender,
+  },
+  {
+    name: 'Gimp',
+    icon: LogoGimp,
   },
   {
     name: 'Krita',

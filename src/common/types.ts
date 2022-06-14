@@ -138,3 +138,7 @@ export interface IButtonProps {
 }
 
 export interface ICardPorps extends ISkill {}
+
+export interface IInputProps {
+  onChange?: (e: string) => void;
+}

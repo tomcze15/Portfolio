@@ -48,4 +48,5 @@ export default {
       PERIOD: 'miesięcy',
     },
   },
+  page404: 'Niestety, ale ta strona nie istnieje.',
 };

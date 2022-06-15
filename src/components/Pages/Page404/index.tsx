@@ -1,5 +1,4 @@
 import { MEDIA } from 'constants/items';
-import { t } from 'i18next';
 import { FunctionComponent } from 'react';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';

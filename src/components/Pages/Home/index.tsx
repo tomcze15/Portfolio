@@ -141,15 +141,11 @@ const Behind = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 1200px;
   display: flex;
   justify-content: center;
   position: absolute;
   overflow: hidden;
-
-  ${MEDIA.XL} {
-    height: 1500px;
-  }
 `;
 
 const CircleRight = styled.div`

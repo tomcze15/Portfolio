@@ -129,13 +129,11 @@ const HelloContainer = styled.div`
 `;
 
 const PhotoContainer = styled.img`
-  height: 550px;
-  min-width: 490px;
+  max-height: 550px;
   animation: ${flyLeft} 2s;
 
   ${MEDIA.S} {
-    height: 400px;
-    min-width: 320px;
+    max-height: 400px;
   }
 `;
 

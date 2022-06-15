@@ -48,4 +48,5 @@ export default {
       PERIOD: 'months',
     },
   },
+  page404: "This page doesn't exist :(",
 };

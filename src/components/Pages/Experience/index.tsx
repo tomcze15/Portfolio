@@ -38,16 +38,14 @@ const ImagesContainer = styled.div`
   gap: 60px;
 
   & img {
-    height: 231px;
+    max-height: 231px;
     ${MEDIA.S} {
-      height: 180px;
-      width: 250px;
+      max-height: 180px;
     }
   }
 
   & svg {
-    height: 285px;
-    width: 400px;
+    max-height: 285px;
 
     ${MEDIA.L} {
       display: none;

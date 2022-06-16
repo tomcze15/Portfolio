@@ -1,6 +1,6 @@
 import { FunctionComponent, StrictMode } from 'react';
 import { ThemeProvider } from 'styled-components';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 
 import { GlobalStyle, Routes } from 'components';

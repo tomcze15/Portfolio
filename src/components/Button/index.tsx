@@ -1,7 +1,8 @@
-import { IconDownload } from 'assets';
-import { INavButtonProps } from 'common/types';
 import { FunctionComponent } from 'react';
 import styled from 'styled-components';
+
+import { IconDownload } from 'assets';
+import { INavButtonProps } from 'common/types';
 
 const ButtonWrapper = styled.a`
   height: 60px;

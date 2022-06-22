@@ -9,7 +9,7 @@ import {
   Language,
 } from 'common/types';
 import { MEDIA, LANGUAGES, ROUTES, CV_PATH } from 'constants/items';
-import useMenu from './useMenu';
+import useMenu from 'assets/hooks/useMenu';
 import { Button, BurgerButton, MobileMenu } from 'components';
 import { useLanguage } from 'assets/hooks/useLanguage';
 

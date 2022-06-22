@@ -129,6 +129,10 @@ export interface IBoxProps {
   children: React.ReactNode;
 }
 
+export interface IBoxTitleProps extends IBoxProps {
+  title: string;
+}
+
 export interface ISideProps {
   contectDirect?: Direction;
 }

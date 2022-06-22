@@ -1,7 +1,7 @@
-import { ICardPorps } from 'common/types';
-import COLORS from 'constants/colors';
-import { FunctionComponent } from 'react';
 import styled, { css } from 'styled-components';
+
+import { ICardPorps } from 'common/types';
+import { FunctionComponent } from 'react';
 
 const flexCenter = css`
   justify-content: center;

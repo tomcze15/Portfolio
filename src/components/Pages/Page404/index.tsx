@@ -1,7 +1,8 @@
-import { MEDIA } from 'constants/items';
 import { FunctionComponent } from 'react';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
+
+import { MEDIA } from 'constants/items';
 
 const Wrapper = styled.div`
   padding-top: 300px;
@@ -20,7 +21,7 @@ const Wrapper = styled.div`
 
 const Page404: FunctionComponent = (): JSX.Element => {
   const { t } = useTranslation();
-  return <Wrapper>{t('page404')}</Wrapper>;
+  return <Wrapper>{t('PAGE404')}</Wrapper>;
 };
 
 export default Page404;

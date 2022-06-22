@@ -1,12 +1,12 @@
 import { FunctionComponent } from 'react';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import styled, { css } from 'styled-components';
 
 import { IButtonProps, ILanguageOptionProps, Language } from 'common/types';
 import { LANGUAGES, ROUTES } from 'constants/items';
 import { IconExit } from 'assets';
 import { useLanguage } from 'assets/hooks/useLanguage';
-import { useTranslation } from 'react-i18next';
 
 const Wrapper = styled.div`
   width: 100%;

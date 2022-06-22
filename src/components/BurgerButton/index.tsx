@@ -1,7 +1,8 @@
-import { IconBurger } from 'assets';
-import { IButtonProps } from 'common/types';
 import { FunctionComponent } from 'react';
 import styled from 'styled-components';
+
+import { IconBurger } from 'assets';
+import { IButtonProps } from 'common/types';
 
 const Wrapper = styled.button`
   height: 60px;

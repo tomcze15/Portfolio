@@ -1,7 +1,8 @@
-import { IBoxProps } from 'common/types';
-import { MEDIA } from 'constants/items';
 import { FunctionComponent } from 'react';
 import styled from 'styled-components';
+
+import { IBoxProps } from 'common/types';
+import { MEDIA } from 'constants/items';
 
 const Wrapper = styled.div`
   height: fit-content;

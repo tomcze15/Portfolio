@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 import { Card, SearchButton, PageTitle } from 'components';
 import { MEDIA, SKILLS } from 'constants/items';
-import { t } from 'i18next';
 import { useTranslation } from 'react-i18next';
 
 const MainWrapper = styled.div`
@@ -51,7 +50,7 @@ const Accomplishment: FunctionComponent = (): JSX.Element => {
 
   return (
     <MainWrapper>
-      <PageTitle title={t('ACCOMPLISHMENT')} />
+      <PageTitle title={t('SKILLS')} />
       <SearchButton onChange={handleInput} />
       <GridSkills>
         {filteredSkills.map((skill) => (

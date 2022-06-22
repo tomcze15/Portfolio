@@ -1,7 +1,7 @@
 export default {
   HOME: 'Home',
   EXPERIENCE: 'Experience',
-  ACCOMPLISHMENT: 'Accomplishment',
+  SKILLS: 'Skills',
   CONTACT: 'Contact',
   LINKS: 'Links',
   ABOUT_ME: {
@@ -16,6 +16,7 @@ export default {
   },
   PROJECTS: {
     FIRST: {
+      TITLE: 'GlobalLogic: The first project',
       DESCRIPTION:
         'My first challenge after completing my internship at GlobalLogic was to join a professional team belonging to a leading German company deals location-based platform . This platform combined location-based content and software to support a panel of electric cars produced by a major manufacturer in the America.',
       LIST: {
@@ -34,6 +35,7 @@ export default {
       PERIOD: 'months',
     },
     SECOND: {
+      TITLE: 'GlobalLogic: The second project',
       DESCRIPTION:
         "I am currently participating in a project for one of the largest distributors of automotive equipment in Europe. I am part of a team that develops and maintains HMI for the world's most popular car brands using dedicated software provided by the company. One of my main tasks in the team to which I belong are improving and correcting the appearance and operation of the HMI.",
       LIST: {
@@ -48,5 +50,8 @@ export default {
       PERIOD: 'months',
     },
   },
-  page404: "This page doesn't exist :(",
+  PAGE404: "This page doesn't exist :(",
+  SEARCHBUTTON: {
+    PLACEHOLDER: 'Search',
+  },
 };

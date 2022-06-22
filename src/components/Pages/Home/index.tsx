@@ -28,13 +28,13 @@ const flyRight = keyframes`
   }
 `;
 
-const flyLeft = keyframes`
+const flyLeft = (start: number = 0, end: number = 0) => keyframes`
   0% {
-    transform: translateX(70px);
+    transform: translateX(${start}px);
   }
 
   100% {
-    transform: translateX(0px);
+    transform: translateX(${end}px);
   }
 `;
 
@@ -70,6 +70,7 @@ const ParagraphWrapper = styled.p`
 const TomaszContainer = styled.div`
   height: 550px;
   width: 100%;
+  overflow: hidden;
   display: flex;
   gap: 220px;
 
@@ -78,7 +79,12 @@ const TomaszContainer = styled.div`
     gap: 110px;
   }
 
+  ${MEDIA.XL} {
+    padding-right: 70px;
+  }
+
   ${MEDIA.L} {
+    padding-right: 0;
     gap: 10px;
     padding-left: 0;
     flex-direction: column;
@@ -94,6 +100,10 @@ const HelloContainer = styled.div`
   font-size: 48px;
   padding-bottom: 200px;
   animation: ${flyRight} 2s;
+
+  ${MEDIA.XL} {
+    animation: ${flyRight} 2s;
+  }
 
   & p:first-of-type {
     color: ${({ theme }) => theme.hello};
@@ -130,7 +140,15 @@ const HelloContainer = styled.div`
 
 const PhotoContainer = styled.img`
   max-height: 550px;
-  animation: ${flyLeft} 2s;
+  animation: ${flyLeft(120, 0)} 2s ease-in;
+
+  ${MEDIA.XXL} {
+    animation: ${flyLeft(110, 0)} 3s ease-in;
+  }
+
+  ${MEDIA.XL} {
+    animation: ${flyLeft(50, 0)} 1.5s ease-in;
+  }
 
   ${MEDIA.S} {
     max-height: 400px;

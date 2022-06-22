@@ -144,6 +144,7 @@ const ButtonSection = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
   & > button,
   & > a:nth-of-type(2) {
     display: none;
@@ -170,6 +171,7 @@ const ButtonSection = styled.div`
 
 const MobileMenuWrapper = styled.div`
   display: none;
+
   ${MEDIA.XL} {
     display: inline;
   }

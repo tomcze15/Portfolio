@@ -15,11 +15,9 @@ const ButtonWrapper = styled.a`
   gap: 13px;
   font-size: 22px;
   transition: 0.2s;
-
   background-color: ${({ theme }) => theme.button.background};
   color: ${({ theme }) => theme.button.text};
   cursor: pointer;
-
   text-decoration: none;
   border: none;
 

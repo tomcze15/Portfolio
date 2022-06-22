@@ -45,7 +45,6 @@ const Side = styled.div<ISideProps>`
   width: 100%;
   height: 100%;
   display: flex;
-
   flex-direction: column;
   justify-content: ${({ contectDirect = 'Left' }) =>
     contectDirect === 'Left' ? 'flex-start' : 'flex-end'};
@@ -140,6 +139,7 @@ const ListContactItem = styled(ListItem)`
 
   &:hover {
     transition: 0.3s;
+
     img {
       transform: translateY(-5px);
     }

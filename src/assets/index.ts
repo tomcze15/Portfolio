@@ -2,6 +2,7 @@ import { ReactComponent as IconDownload } from 'assets/icons/download.svg';
 import { ReactComponent as IconCar } from 'assets/icons/car.svg';
 import { ReactComponent as IconBurger } from 'assets/icons/burger.svg';
 import { ReactComponent as IconExit } from 'assets/icons/Exit.svg';
+import { ReactComponent as IconMagnifier } from 'assets/icons/magnifier.svg';
 import { ReactComponent as LogoFacebook } from 'assets/logo/facebook.svg';
 import { ReactComponent as LogoLinkedin } from 'assets/logo/linkedin.svg';
 import { ReactComponent as LogoGithub } from 'assets/logo/github.svg';
@@ -58,6 +59,7 @@ export {
   IconPhone,
   IconBurger,
   IconExit,
+  IconMagnifier,
   LogoExpress,
   LogoJest,
   LogoJS,

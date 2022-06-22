@@ -166,7 +166,6 @@ const CircleLeft = styled.div`
   height: 980px;
   width: 980px;
   border-radius: 2000px;
-  background: ${({ theme }) => theme.background};
   background: ${({ theme }) => theme.circles.left};
   position: absolute;
   transform: translateY(210px) translateX(-540px);

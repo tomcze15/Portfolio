@@ -30,7 +30,7 @@ const IconWrapper = styled.div`
   display: flex;
   ${flexCenter}
   background-color: ${({ theme }) => theme.card.top.background};
-
+  
   img,
   svg {
     max-height: 160px;

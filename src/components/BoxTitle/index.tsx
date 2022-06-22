@@ -7,7 +7,7 @@ import { MEDIA } from 'constants/items';
 const Wrapper = styled.div`
   height: fit-content;
   width: fit-content;
-  background-color: #9a8c98;
+  background-color: ${({ theme }) => theme.boxTitle.background};
   border-radius: 13px;
   overflow: hidden;
   gap: 30px;
@@ -25,8 +25,8 @@ const Title = styled.h3`
   width: 100%;
   height: 150px;
   font-size: 38px;
-  color: #f2e9e4;
-  background-color: #4a4e69;
+  color: ${({ theme }) => theme.boxTitle.title.text};
+  background-color: ${({ theme }) => theme.boxTitle.title.background};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,8 +37,11 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   gap: 30px;
-  * {
-    color: #22223b;
+
+  p,
+  span,
+  li {
+    color: ${({ theme }) => theme.boxTitle.text};
   }
 `;
 

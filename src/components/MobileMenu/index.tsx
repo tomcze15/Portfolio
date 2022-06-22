@@ -64,6 +64,7 @@ const LanguageOption = styled.span<ILanguageOptionProps>`
     font-weight: bold;
     color: ${({ theme }) => theme.menu.text.selected};
   }
+
   ${({ currentLng, lng }) => (currentLng === lng ? Bold : '')};
 `;
 

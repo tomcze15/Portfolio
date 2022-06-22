@@ -32,6 +32,12 @@ export interface ITheme extends DefaultTheme {
     hoverBg: string;
     shadow: string;
   };
+  searchButton: {
+    text: string;
+    background: string;
+    shadow: string;
+    placeholder: string;
+  };
   mobileMenu: {
     background: string;
     buttonBg: string;
@@ -55,6 +61,14 @@ export interface ITheme extends DefaultTheme {
   box: {
     text: string;
     background: string;
+  };
+  boxTitle: {
+    text: string;
+    background: string;
+    title: {
+      text: string;
+      background: string;
+    };
   };
   contact: {
     text: string;

@@ -40,6 +40,7 @@ const ImagesContainer = styled.div`
 
   & img {
     max-height: 231px;
+
     ${MEDIA.S} {
       max-height: 180px;
     }
@@ -79,6 +80,7 @@ const InfoImageContainer = styled.div`
     flex-direction: column;
     gap: 25px;
     padding-bottom: 50px;
+
     & ul {
       padding-left: 0px;
     }
@@ -109,6 +111,7 @@ const TasksContainer = styled.div`
     & span {
       padding-bottom: 30px;
       font-weight: bold;
+
       ${MEDIA.L} {
         text-align: center;
       }

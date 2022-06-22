@@ -1,5 +1,7 @@
 import { ITheme, Theme } from 'common/types';
 import COLORS from 'constants/colors';
+import GRADIENT from 'constants/gradient';
+import SHADOW from 'constants/shadow';
 
 const DarkTheme: ITheme = {
   id: Theme.DARK,
@@ -13,7 +15,13 @@ const DarkTheme: ITheme = {
     background: COLORS.COLOR_3,
     text: COLORS.COLOR_1,
     hoverBg: COLORS.COLOR_4,
-    shadow: COLORS.COLOR_1,
+    shadow: SHADOW.SHADOW_2,
+  },
+  searchButton: {
+    text: COLORS.COLOR_1,
+    background: COLORS.COLOR_5,
+    shadow: SHADOW.SHADOW_1,
+    placeholder: COLORS.COLOR_3,
   },
   mobileMenu: {
     background: COLORS.DIMMED,
@@ -29,15 +37,23 @@ const DarkTheme: ITheme = {
       normal: COLORS.COLOR_2,
       transparent: COLORS.TRANSPARENT,
     },
-    shadow: COLORS.BLACK,
+    shadow: SHADOW.SHADOW_3,
   },
   circles: {
-    left: COLORS.LINEAR_1,
-    right: COLORS.LINEAR_2,
+    left: GRADIENT.LINEAR_1,
+    right: GRADIENT.LINEAR_2,
   },
   box: {
     text: COLORS.COLOR_5,
     background: COLORS.COLOR_2,
+  },
+  boxTitle: {
+    text: COLORS.COLOR_1,
+    background: COLORS.COLOR_3,
+    title: {
+      text: COLORS.COLOR_5,
+      background: COLORS.COLOR_2,
+    },
   },
   contact: {
     text: COLORS.COLOR_4,
@@ -50,7 +66,7 @@ const DarkTheme: ITheme = {
       background: COLORS.COLOR_2,
       text: COLORS.COLOR_4,
     },
-    shadow: COLORS.BLACK,
+    shadow: SHADOW.SHADOW_3,
   },
   footer: {
     title: COLORS.COLOR_4,

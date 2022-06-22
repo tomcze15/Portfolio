@@ -1,7 +1,7 @@
 export default {
   HOME: 'Strona Główna',
   EXPERIENCE: 'Doświadczenie',
-  ACCOMPLISHMENT: 'Umiejętności',
+  SKILLS: 'Umiejętności',
   CONTACT: 'Kontakt',
   LINKS: 'Odnośniki',
   ABOUT_ME: {
@@ -16,6 +16,7 @@ export default {
   },
   PROJECTS: {
     FIRST: {
+      TITLE: 'GlobalLogic: Pierwszy projekt',
       DESCRIPTION:
         'Moim pierwszym wyzwaniem po ukończeniu stażu w GlobalLogic było dołączenie do profesjonalnego zespołu należącego do wiodącej firmy niemieckiej zajmującej się platformą lokalizacyjną. Platforma ta łączyła treści lokalizacyjne i oprogramowania w celu obsługi panelu samochodów elektrycznych produkowanych u jedngo z  większych producentów w ameryce.',
       LIST: {
@@ -34,8 +35,9 @@ export default {
       PERIOD: 'miesiące',
     },
     SECOND: {
+      TITLE: 'GlobalLogic: Drugi projekt',
       DESCRIPTION:
-        'Aktualnie uczestnicze w projekcie dla jednego z największych dystrybutorów sprzętu motoryzacyjnego w Europie. Należę do zespołu, który zajmuje się między innymi rozwojem oraz utrzymaniem HMI dla najpopularniejszych marek samochodów na świecie za pomocą dedykowane oprogramowania dostarczanego od firmy. Głównymi zadaniami zespołu do którego należę to poprawa i korekta wygladu oraz działania interfejsu HMI.',
+        'Aktualnie uczestniczę w projekcie dla jednego z największych dystrybutorów sprzętu motoryzacyjnego w Europie. Należę do zespołu, który zajmuje się między innymi rozwojem oraz utrzymaniem HMI dla najpopularniejszych marek samochodów na świecie za pomocą dedykowane oprogramowania dostarczanego od firmy. Głównymi zadaniami zespołu do którego należę to poprawa i korekta wyglądu oraz działania interfejsu HMI.',
       LIST: {
         DESCRIPTION: 'Do moich głównych zadań aktualnie należy:',
         ITEMS: [
@@ -48,5 +50,8 @@ export default {
       PERIOD: 'miesięcy',
     },
   },
-  page404: 'Niestety, ale ta strona nie istnieje.',
+  PAGE404: 'Niestety, ale ta strona nie istnieje.',
+  SEARCHBUTTON: {
+    PLACEHOLDER: 'Szukaj',
+  },
 };

@@ -63,7 +63,7 @@ export const LANGUAGES = {
 export const ROUTES_HREF = {
   HOME: '/',
   EXPERIENCE: '/experience',
-  ACCOMPLISHMENT: '/accomplishment',
+  SKILLS: '/skills',
   CONTACT: '/contact',
   UNKNOWN: '*',
 };
@@ -80,8 +80,8 @@ export const ROUTES: IRoute[] = [
     href: ROUTES_HREF.EXPERIENCE,
   },
   {
-    title: 'ACCOMPLISHMENT',
-    href: ROUTES_HREF.ACCOMPLISHMENT,
+    title: 'SKILLS',
+    href: ROUTES_HREF.SKILLS,
   },
   {
     title: 'CONTACT',

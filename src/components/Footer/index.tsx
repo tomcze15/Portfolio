@@ -1,10 +1,11 @@
-import { ISideProps } from 'common/types';
-import COLORS from 'constants/colors';
-import { CONTACTS, MEDIA, ROUTES, SOCIALS } from 'constants/items';
 import { FunctionComponent } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 import styled, { css } from 'styled-components';
+
+import { ISideProps } from 'common/types';
+import COLORS from 'constants/colors';
+import { CONTACTS, MEDIA, ROUTES, SOCIALS } from 'constants/items';
 
 const ItemCommonBehavoiur = css`
   color: ${({ theme }) => theme.footer.text.normal};
@@ -44,7 +45,6 @@ const Side = styled.div<ISideProps>`
   width: 100%;
   height: 100%;
   display: flex;
-
   flex-direction: column;
   justify-content: ${({ contectDirect = 'Left' }) =>
     contectDirect === 'Left' ? 'flex-start' : 'flex-end'};
@@ -139,6 +139,7 @@ const ListContactItem = styled(ListItem)`
 
   &:hover {
     transition: 0.3s;
+
     img {
       transform: translateY(-5px);
     }

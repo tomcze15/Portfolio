@@ -1,8 +1,9 @@
-import { Box, PageTitle } from 'components';
-import { CONTACTS, MEDIA } from 'constants/items';
 import { FunctionComponent } from 'react';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
+
+import { Box, PageTitle } from 'components';
+import { CONTACTS, MEDIA } from 'constants/items';
 
 const MainWrapper = styled.div`
   height: 100%;

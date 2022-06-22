@@ -1,7 +1,8 @@
-import { IconDownload } from 'assets';
-import { INavButtonProps } from 'common/types';
 import { FunctionComponent } from 'react';
 import styled from 'styled-components';
+
+import { IconDownload } from 'assets';
+import { INavButtonProps } from 'common/types';
 
 const ButtonWrapper = styled.a`
   height: 60px;
@@ -14,11 +15,9 @@ const ButtonWrapper = styled.a`
   gap: 13px;
   font-size: 22px;
   transition: 0.2s;
-
   background-color: ${({ theme }) => theme.button.background};
   color: ${({ theme }) => theme.button.text};
   cursor: pointer;
-
   text-decoration: none;
   border: none;
 

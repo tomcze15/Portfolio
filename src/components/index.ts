@@ -1,5 +1,5 @@
 export { default as GlobalStyle } from 'components/GlobalStyle';
-export { default as Accomplishment } from 'components/Pages/Accomplishment';
+export { default as Skills } from 'components/Pages/Skills';
 export { default as Contact } from 'components/Pages/Contact';
 export { default as Experience } from 'components/Pages/Experience';
 export { default as Home } from 'components/Pages/Home';
@@ -14,3 +14,4 @@ export { default as Card } from 'components/Card';
 export { default as BurgerButton } from 'components/BurgerButton';
 export { default as SearchButton } from 'components/SearchButton';
 export { default as PageTitle } from 'components/PageTitle';
+export { default as BoxTitle } from 'components/BoxTitle';

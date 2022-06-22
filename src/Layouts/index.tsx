@@ -1,7 +1,8 @@
-import { ILayoutProps } from 'common/types';
-import { Footer, Menu } from 'components';
 import { FunctionComponent } from 'react';
 import styled from 'styled-components';
+
+import { ILayoutProps } from 'common/types';
+import { Footer, Menu } from 'components';
 
 const LayoutWrapper = styled.main`
   height: 100%;

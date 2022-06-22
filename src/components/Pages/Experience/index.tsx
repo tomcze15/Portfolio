@@ -1,3 +1,7 @@
+import { FunctionComponent } from 'react';
+import { useTranslation } from 'react-i18next';
+import styled, { css } from 'styled-components';
+
 import {
   ImageCarNavi,
   IconCar,
@@ -7,11 +11,8 @@ import {
   ImageScreen,
 } from 'assets';
 import { SVGType } from 'common/types';
-import { Box, PageTitle } from 'components';
+import { PageTitle, BoxTitle } from 'components';
 import { MEDIA, TECHNOLOGIES } from 'constants/items';
-import { FunctionComponent } from 'react';
-import { useTranslation } from 'react-i18next';
-import styled, { css } from 'styled-components';
 
 const MainWrapper = styled.div`
   height: 100%;
@@ -39,6 +40,7 @@ const ImagesContainer = styled.div`
 
   & img {
     max-height: 231px;
+
     ${MEDIA.S} {
       max-height: 180px;
     }
@@ -78,6 +80,7 @@ const InfoImageContainer = styled.div`
     flex-direction: column;
     gap: 25px;
     padding-bottom: 50px;
+
     & ul {
       padding-left: 0px;
     }
@@ -108,6 +111,7 @@ const TasksContainer = styled.div`
     & span {
       padding-bottom: 30px;
       font-weight: bold;
+
       ${MEDIA.L} {
         text-align: center;
       }
@@ -203,7 +207,7 @@ const Experience: FunctionComponent = (): JSX.Element => {
   return (
     <MainWrapper>
       <PageTitle title={t('EXPERIENCE')} />
-      <Box>
+      <BoxTitle title={t('PROJECTS.SECOND.TITLE')}>
         <Description>{t('PROJECTS.SECOND.DESCRIPTION')}</Description>
         <ImagesContainer>
           <img src={ImageScreen} alt="screen" />
@@ -224,8 +228,8 @@ const Experience: FunctionComponent = (): JSX.Element => {
           <img src={ImageClock} alt="test" />
           <span>8 {t('PROJECTS.SECOND.PERIOD')}</span>
         </SmallInfoImageContainer>
-      </Box>
-      <Box>
+      </BoxTitle>
+      <BoxTitle title={t('PROJECTS.FIRST.TITLE')}>
         <Description>{t('PROJECTS.FIRST.DESCRIPTION')}</Description>
         <ImagesContainer>
           <img src={ImageEarth} />
@@ -266,7 +270,7 @@ const Experience: FunctionComponent = (): JSX.Element => {
           <img src={ImageClock} alt="test" />
           <span>3 {t('PROJECTS.FIRST.PERIOD')}</span>
         </SmallInfoImageContainer>
-      </Box>
+      </BoxTitle>
     </MainWrapper>
   );
 };

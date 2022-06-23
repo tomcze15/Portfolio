@@ -44,7 +44,7 @@ const MainWrapper = styled.div`
   max-width: 1400px;
   padding-bottom: 300px;
 
-  ${MEDIA.L} {
+  ${MEDIA.XXL} {
     padding-bottom: 200px;
   }
 

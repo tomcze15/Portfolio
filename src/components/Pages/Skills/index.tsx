@@ -14,6 +14,14 @@ const MainWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 50px;
+
+  ${MEDIA.XXL} {
+    padding-bottom: 150px;
+  }
+
+  ${MEDIA.M} {
+    padding-bottom: 80px;
+  }
 `;
 
 const GridSkills = styled.div`

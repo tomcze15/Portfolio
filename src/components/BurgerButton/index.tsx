@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import { IconBurger } from 'assets';
 import { IButtonProps } from 'common/types';
+import { MEDIA } from 'constants/items';
 
 const Wrapper = styled.button`
   height: 60px;
@@ -17,6 +18,16 @@ const Wrapper = styled.button`
   & svg {
     height: 30px;
     width: 30px;
+
+    ${MEDIA.L} {
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+  ${MEDIA.L} {
+    height: 40px;
+    width: 40px;
   }
 `;
 

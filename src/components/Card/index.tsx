@@ -1,7 +1,8 @@
+import { FunctionComponent } from 'react';
 import styled, { css } from 'styled-components';
 
 import { ICardPorps } from 'common/types';
-import { FunctionComponent } from 'react';
+import { MEDIA } from 'constants/items';
 
 const flexCenter = css`
   justify-content: center;
@@ -15,6 +16,16 @@ const CardContainer = styled.div`
   overflow: hidden;
   transition: 0.5s;
   cursor: pointer;
+
+  ${MEDIA.XXL} {
+    height: 270px;
+    width: 260px;
+  }
+
+  ${MEDIA.M} {
+    height: 200px;
+    width: 190px;
+  }
 
   &:hover {
     transform: scale(1.1, 1.1);
@@ -30,29 +41,52 @@ const IconWrapper = styled.div`
   display: flex;
   ${flexCenter}
   background-color: ${({ theme }) => theme.card.top.background};
-  
+
   img,
   svg {
     max-height: 160px;
     max-width: 280px;
+
+    ${MEDIA.XXL} {
+      max-height: 120px;
+      max-width: 210px;
+    }
+
+    ${MEDIA.M} {
+      max-height: 80px;
+      max-width: 150px;
+    }
   }
 `;
 
 const TitleWrapper = styled.div`
   height: 35%;
   width: 100%;
-  display: flex;
-  ${flexCenter}
   background-color: ${({ theme }) => theme.card.bottom.background};
+  display: flex;
+  text-align: center;
+  ${flexCenter}
 
   & h5 {
     transition: 0.5s;
     font-size: 32px;
     color: ${({ theme }) => theme.card.bottom.text};
+
+    ${MEDIA.XXL} {
+      font-size: 28px;
+    }
+
+    ${MEDIA.M} {
+      font-size: 21px;
+    }
   }
 
   ${CardContainer}:hover & h5 {
     font-size: 37px;
+
+    ${MEDIA.M} {
+      font-size: 26px;
+    }
   }
 `;
 

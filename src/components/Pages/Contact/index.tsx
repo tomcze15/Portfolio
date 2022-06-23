@@ -11,20 +11,21 @@ const MainWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
   font-size: 44px;
   gap: 100px;
   max-width: 1400px;
-  padding-bottom: 750px;
+  padding-bottom: 200px;
 
-  ${MEDIA.XL} {
+  ${MEDIA.XXL} {
     font-size: 36px;
-    padding-bottom: 550px;
-    gap: 70px;
+    padding-bottom: 200px;
+    gap: 40px;
   }
 
   ${MEDIA.M} {
     font-size: 23px;
-    padding-bottom: 500px;
+    padding-bottom: 100px;
     gap: 50px;
   }
 
@@ -48,7 +49,7 @@ const ContactContainer = styled.div`
     height: 80px;
     width: 80px;
 
-    ${MEDIA.XL} {
+    ${MEDIA.XXL} {
       height: 50px;
       width: 50px;
     }
@@ -65,15 +66,15 @@ const ContactContainer = styled.div`
       gap: 40px;
       font-size: 66px;
 
-      ${MEDIA.XL} {
-        font-size: 36px;
+      ${MEDIA.XXL} {
+        font-size: 40px;
       }
 
       & img {
         height: 100px;
         width: 100px;
 
-        ${MEDIA.XL} {
+        ${MEDIA.XXL} {
           height: 80px;
           width: 80px;
         }

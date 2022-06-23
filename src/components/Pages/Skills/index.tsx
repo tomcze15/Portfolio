@@ -18,6 +18,10 @@ const MainWrapper = styled.div`
   ${MEDIA.XXL} {
     padding-bottom: 150px;
   }
+
+  ${MEDIA.M} {
+    padding-bottom: 80px;
+  }
 `;
 
 const GridSkills = styled.div`

@@ -158,7 +158,7 @@ export const SKILLS = [
     icon: LogoJS,
   },
   {
-    name: 'Styledcomponents',
+    name: 'Styled components',
     icon: LogoStyledcomponents,
   },
   {

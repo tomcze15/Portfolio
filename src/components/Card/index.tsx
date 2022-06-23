@@ -22,6 +22,11 @@ const CardContainer = styled.div`
     width: 260px;
   }
 
+  ${MEDIA.M} {
+    height: 200px;
+    width: 190px;
+  }
+
   &:hover {
     transform: scale(1.1, 1.1);
     -webkit-box-shadow: 0px 0px 21px 7px ${({ theme }) => theme.card.shadow};
@@ -46,6 +51,11 @@ const IconWrapper = styled.div`
       max-height: 120px;
       max-width: 210px;
     }
+
+    ${MEDIA.M} {
+      max-height: 80px;
+      max-width: 150px;
+    }
   }
 `;
 
@@ -54,6 +64,7 @@ const TitleWrapper = styled.div`
   width: 100%;
   background-color: ${({ theme }) => theme.card.bottom.background};
   display: flex;
+  text-align: center;
   ${flexCenter}
 
   & h5 {
@@ -64,10 +75,18 @@ const TitleWrapper = styled.div`
     ${MEDIA.XXL} {
       font-size: 28px;
     }
+
+    ${MEDIA.M} {
+      font-size: 21px;
+    }
   }
 
   ${CardContainer}:hover & h5 {
     font-size: 37px;
+
+    ${MEDIA.M} {
+      font-size: 26px;
+    }
   }
 `;
 

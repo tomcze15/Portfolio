@@ -40,7 +40,12 @@ const shadowMenu = css`
 
 const WrapperMain = styled.header<IHeaderStyleProps>`
   width: 100%;
-  height: ${({ isFixed }) => (isFixed ? '90' : '150')}px;
+  height: ${({ isFixed }) => (isFixed ? 90 : 150)}px;
+
+  ${MEDIA.L} {
+    height: ${({ isFixed }) => (isFixed ? 60 : 100)}px;
+  }
+
   background-color: ${({ isFixed, theme }) =>
     isFixed ? theme.menu.background.normal : theme.menu.background.transparent};
   display: flex;

@@ -34,6 +34,14 @@ const Title = styled.h3`
   ${MEDIA.XXL} {
     font-size: 32px;
   }
+
+  ${MEDIA.L} {
+    font-size: 28px;
+  }
+
+  ${MEDIA.M} {
+    font-size: 21px;
+  }
 `;
 
 const Content = styled.div`

@@ -1,5 +1,4 @@
 import { ReactComponent as IconDownload } from 'assets/icons/download.svg';
-import { ReactComponent as IconCar } from 'assets/icons/car.svg';
 import { ReactComponent as IconBurger } from 'assets/icons/burger.svg';
 import { ReactComponent as IconExit } from 'assets/icons/Exit.svg';
 import { ReactComponent as IconMagnifier } from 'assets/icons/magnifier.svg';
@@ -11,7 +10,6 @@ import { ReactComponent as LogoBlender } from 'assets/logo/Blender.svg';
 import { ReactComponent as LogoCSharp } from 'assets/logo/c-sharp.svg';
 import { ReactComponent as LogoCPlusPlus } from 'assets/logo/C++.svg';
 import { ReactComponent as LogoCucumber } from 'assets/logo/cucumber.svg';
-import { ReactComponent as LogoFigma } from 'assets/logo/Figma.svg';
 import { ReactComponent as LogoHTML } from 'assets/logo/HTML5.svg';
 import { ReactComponent as LogoNextJS } from 'assets/logo/Nextjs.svg';
 import { ReactComponent as LogoReact } from 'assets/logo/React.svg';
@@ -19,6 +17,7 @@ import { ReactComponent as LogoTailwind } from 'assets/logo/tailwind.svg';
 import { ReactComponent as LogoLinux } from 'assets/logo/Tux.svg';
 import { ReactComponent as LogoVS } from 'assets/logo/Visual_Studio.svg';
 import { ReactComponent as LogoWindows } from 'assets/logo/Windows.svg';
+import { ReactComponent as ImageCar } from 'assets/icons/car.svg';
 import { ReactComponent as ImageCarNavi } from 'assets/images/car-a-b.svg';
 import IconEmail from 'assets/icons/mail.png';
 import IconPhone from 'assets/icons/phone.png';
@@ -28,6 +27,7 @@ import ImageList from 'assets/images/list.png';
 import ImageClock from 'assets/images/clock.png';
 import ImageEarth from 'assets/images/earth.png';
 import LogoCSS from 'assets/logo/CSS3.png';
+import LogoFigma from 'assets/logo/figma.png';
 import LogoGitlab from 'assets/logo/gitlab.png';
 import LogoJira from 'assets/logo/jira.png';
 import LogoConfluence from 'assets/logo/atlassian-confluence.png';
@@ -53,7 +53,7 @@ import LogoGimp from 'assets/logo/GIMP.png';
 import LogoKrita from 'assets/logo/Krita.png';
 
 export {
-  IconCar,
+  ImageCar,
   IconDownload,
   IconEmail,
   IconPhone,

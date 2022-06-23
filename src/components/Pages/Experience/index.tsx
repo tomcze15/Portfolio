@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 
 import {
   ImageCarNavi,
-  IconCar,
+  ImageCar,
   ImageClock,
   ImageEarth,
   ImageList,
@@ -248,7 +248,7 @@ const Experience: FunctionComponent = (): JSX.Element => {
         <Description>{t('PROJECTS.SECOND.DESCRIPTION')}</Description>
         <ImagesContainer>
           <img src={ImageScreen} alt="screen" />
-          <IconCar />
+          <ImageCar />
         </ImagesContainer>
         <InfoImageContainer>
           <TasksContainer>

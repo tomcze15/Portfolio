@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react';
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 
 import { IconDownload } from 'assets';
 import { INavButtonProps } from 'common/types';
@@ -38,10 +39,12 @@ const Button: FunctionComponent<INavButtonProps> = ({
   children,
   pathToDownload,
 }): JSX.Element => {
+  const { t } = useTranslation();
+
   return (
     <ButtonWrapper href={pathToDownload} target="_blank" download>
       {children}
-      <IconDownload />
+      <IconDownload title={t('ICONS.DOWNLOAD')} />
     </ButtonWrapper>
   );
 };

@@ -172,7 +172,7 @@ const Footer: FunctionComponent = (): JSX.Element => {
           <ListContainer>
             {CONTACTS.map(({ icon, text }, index) => (
               <ListContactItem key={index}>
-                <img src={icon} alt="x" />
+                <img src={icon} alt={t('CONTACT_DETAILS')} />
                 <span>{text}</span>
               </ListContactItem>
             ))}
@@ -182,7 +182,7 @@ const Footer: FunctionComponent = (): JSX.Element => {
       <ContainerSocilas>
         {SOCIALS.map((social, index) => (
           <SocialButton key={index} href={social.href} target="_blank">
-            <social.icon />
+            <social.icon title={t('CONTACT_DETAILS')} />
           </SocialButton>
         ))}
       </ContainerSocilas>

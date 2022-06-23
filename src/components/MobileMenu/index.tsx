@@ -132,7 +132,7 @@ const MobileMenu: FunctionComponent<IButtonProps> = ({
             </LanguageOption>
           </LanguageSection>
           <IconExitWrapper onClick={onClick}>
-            <IconExit />
+            <IconExit title={t('EXIT')} />
           </IconExitWrapper>
         </Top>
         <NavList>

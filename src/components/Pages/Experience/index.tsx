@@ -247,7 +247,7 @@ const Experience: FunctionComponent = (): JSX.Element => {
       <BoxTitle title={t('PROJECTS.SECOND.TITLE')}>
         <Description>{t('PROJECTS.SECOND.DESCRIPTION')}</Description>
         <ImagesContainer>
-          <img src={ImageScreen} alt="screen" />
+          <img src={ImageScreen} alt={t('CAR_PANEL')} />
           <ImageCar />
         </ImagesContainer>
         <InfoImageContainer>
@@ -259,18 +259,18 @@ const Experience: FunctionComponent = (): JSX.Element => {
               ))}
             </ListContainer>
           </TasksContainer>
-          <img src={ImageList} alt="test" />
+          <img src={ImageList} alt={t('LIST')} />
         </InfoImageContainer>
         <SmallInfoImageContainer>
-          <img src={ImageClock} alt="test" />
+          <img src={ImageClock} alt={t('CLOCK')} />
           <span>8 {t('PROJECTS.SECOND.PERIOD')}</span>
         </SmallInfoImageContainer>
       </BoxTitle>
       <BoxTitle title={t('PROJECTS.FIRST.TITLE')}>
         <Description>{t('PROJECTS.FIRST.DESCRIPTION')}</Description>
         <ImagesContainer>
-          <img src={ImageEarth} />
-          <ImageCarNavi />
+          <img src={ImageEarth} alt={t('EARTH')} />
+          <ImageCarNavi title={t('CAR')} />
         </ImagesContainer>
         <InfoImageContainer>
           <TasksContainer>
@@ -281,7 +281,7 @@ const Experience: FunctionComponent = (): JSX.Element => {
               ))}
             </ListContainer>
           </TasksContainer>
-          <img src={ImageList} alt="test" />
+          <img src={ImageList} alt={t('LIST')} />
         </InfoImageContainer>
         <TechContainer>
           <span>{t('PROJECTS.FIRST.TECHNOLOGIES')}</span>
@@ -291,10 +291,14 @@ const Experience: FunctionComponent = (): JSX.Element => {
                 <LogosContainer key={i}>
                   {LogosGroup.map((Logo: string | SVGType, index) =>
                     typeof Logo === 'string' ? (
-                      <ImgWrapper key={index} src={Logo} alt="tech icon" />
+                      <ImgWrapper
+                        key={index}
+                        src={Logo}
+                        alt={t('TECHNOLOGY')}
+                      />
                     ) : (
                       <SVGWrapper key={index}>
-                        <Logo />
+                        <Logo title={t('TECHNOLOGY')} />
                       </SVGWrapper>
                     )
                   )}
@@ -304,7 +308,7 @@ const Experience: FunctionComponent = (): JSX.Element => {
           ))}
         </TechContainer>
         <SmallInfoImageContainer>
-          <img src={ImageClock} alt="test" />
+          <img src={ImageClock} alt={t('CLOCK')} />
           <span>3 {t('PROJECTS.FIRST.PERIOD')}</span>
         </SmallInfoImageContainer>
       </BoxTitle>

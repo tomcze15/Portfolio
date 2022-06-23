@@ -100,7 +100,7 @@ const Contact: FunctionComponent = (): JSX.Element => {
       {CONTACTS.map(({ icon, text }, index) => (
         <Box key={index}>
           <ContactContainer>
-            <img src={icon} />
+            <img src={icon} alt={t('CONTACT_DETAILS')} />
             <span>{text}</span>
           </ContactContainer>
         </Box>

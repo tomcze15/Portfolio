@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 
 import { ICardPorps } from 'common/types';
 import { MEDIA } from 'constants/items';
+import { useTranslation } from 'react-i18next';
 
 const flexCenter = css`
   justify-content: center;
@@ -92,14 +93,15 @@ const TitleWrapper = styled.div`
 
 const Card: FunctionComponent<ICardPorps> = (props): JSX.Element => {
   const typeOfIcon = typeof props.icon;
+  const { t } = useTranslation();
 
   return (
     <CardContainer>
       <IconWrapper>
         {typeOfIcon === 'object' ? (
-          <props.icon />
+          <props.icon title={t('LOGO') + props.name} />
         ) : (
-          <img src={props.icon as string} />
+          <img src={props.icon as string} alt={t('LOGO') + props.name} />
         )}
       </IconWrapper>
       <TitleWrapper>

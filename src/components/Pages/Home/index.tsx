@@ -210,7 +210,7 @@ const Home: FunctionComponent = (): JSX.Element => {
             <p>{MY_NAME}</p>
             <Button pathToDownload={CV_PATH}>{t('BUTTON.LONG')}</Button>
           </HelloContainer>
-          <PhotoContainer src={ImageTomasz} />
+          <PhotoContainer src={ImageTomasz} alt={t('AUTHOR_PHOTO')} />
         </TomaszContainer>
         <Box>
           <ParagraphWrapper>{t('ABOUT_ME.P1')}</ParagraphWrapper>

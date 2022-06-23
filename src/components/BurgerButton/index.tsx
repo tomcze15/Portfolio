@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react';
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 
 import { IconBurger } from 'assets';
 import { IButtonProps } from 'common/types';
@@ -34,9 +35,11 @@ const Wrapper = styled.button`
 const BurgerButton: FunctionComponent<IButtonProps> = ({
   onClick,
 }): JSX.Element => {
+  const { t } = useTranslation();
+
   return (
     <Wrapper onClick={onClick}>
-      <IconBurger />
+      <IconBurger title={t('ICONS.BURGERBUTTON')} />
     </Wrapper>
   );
 };

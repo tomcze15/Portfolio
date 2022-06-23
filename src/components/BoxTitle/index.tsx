@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   gap: 30px;
 
   ${MEDIA.XXL} {
-    max-width: 1200px;
+    font-size: 18px;
   }
 
   ${MEDIA.XL} {
@@ -23,13 +23,17 @@ const Wrapper = styled.div`
 
 const Title = styled.h3`
   width: 100%;
-  height: 150px;
+  height: 100px;
   font-size: 38px;
   color: ${({ theme }) => theme.boxTitle.title.text};
   background-color: ${({ theme }) => theme.boxTitle.title.background};
   display: flex;
   justify-content: center;
   align-items: center;
+
+  ${MEDIA.XXL} {
+    font-size: 32px;
+  }
 `;
 
 const Content = styled.div`

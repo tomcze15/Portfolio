@@ -25,8 +25,13 @@ const MainWrapper = styled.div`
   max-width: 1400px;
   padding-bottom: 250px;
 
-  ${MEDIA.L} {
+  ${MEDIA.XXL} {
+    max-width: 1100px;
     gap: 100px;
+    padding-bottom: 150px;
+  }
+
+  ${MEDIA.L} {
     padding-bottom: 100px;
   }
 `;
@@ -39,7 +44,11 @@ const ImagesContainer = styled.div`
   gap: 60px;
 
   & img {
-    max-height: 231px;
+    max-height: 230px;
+
+    ${MEDIA.XXL} {
+      max-height: 180px;
+    }
 
     ${MEDIA.S} {
       max-height: 180px;
@@ -48,6 +57,10 @@ const ImagesContainer = styled.div`
 
   & svg {
     max-height: 285px;
+
+    ${MEDIA.XXL} {
+      max-height: 200px;
+    }
 
     ${MEDIA.L} {
       display: none;
@@ -70,6 +83,11 @@ const InfoImageContainer = styled.div`
   & img {
     height: 200px;
     width: 200px;
+
+    ${MEDIA.XXL} {
+      height: 160px;
+      width: 160px;
+    }
   }
 
   & ul {
@@ -88,11 +106,17 @@ const InfoImageContainer = styled.div`
 `;
 
 const SmallInfoImageContainer = styled(InfoImageContainer)`
+  gap: 30px;
+
   & img {
     height: 100px;
     width: 100px;
+
+    ${MEDIA.XXL} {
+      height: 70px;
+      width: 70px;
+    }
   }
-  gap: 30px;
 
   ${MEDIA.L} {
     padding-bottom: 0px;
@@ -142,6 +166,11 @@ const TechContainer = styled.div`
     width: 100%;
   }
 
+  ${MEDIA.XXL} {
+    gap: 15px;
+    padding-top: 40px;
+  }
+
   ${MEDIA.L} {
     gap: 70px;
     padding-top: 30px;
@@ -154,6 +183,10 @@ const TechsSection = styled.div`
   display: flex;
   justify-content: center;
   gap: 120px;
+
+  ${MEDIA.XXL} {
+    gap: 80px;
+  }
 
   ${MEDIA.L} {
     align-items: center;
@@ -169,6 +202,10 @@ const LogosContainer = styled.div`
   & img,
   & svg {
     height: 100px;
+
+    ${MEDIA.XXL} {
+      height: 60px;
+    }
   }
 
   ${MEDIA.L} {

@@ -1,7 +1,8 @@
+import { FunctionComponent } from 'react';
 import styled, { css } from 'styled-components';
 
 import { ICardPorps } from 'common/types';
-import { FunctionComponent } from 'react';
+import { MEDIA } from 'constants/items';
 
 const flexCenter = css`
   justify-content: center;
@@ -15,6 +16,11 @@ const CardContainer = styled.div`
   overflow: hidden;
   transition: 0.5s;
   cursor: pointer;
+
+  ${MEDIA.XXL} {
+    height: 270px;
+    width: 260px;
+  }
 
   &:hover {
     transform: scale(1.1, 1.1);
@@ -30,25 +36,34 @@ const IconWrapper = styled.div`
   display: flex;
   ${flexCenter}
   background-color: ${({ theme }) => theme.card.top.background};
-  
+
   img,
   svg {
     max-height: 160px;
     max-width: 280px;
+
+    ${MEDIA.XXL} {
+      max-height: 120px;
+      max-width: 210px;
+    }
   }
 `;
 
 const TitleWrapper = styled.div`
   height: 35%;
   width: 100%;
+  background-color: ${({ theme }) => theme.card.bottom.background};
   display: flex;
   ${flexCenter}
-  background-color: ${({ theme }) => theme.card.bottom.background};
 
   & h5 {
     transition: 0.5s;
     font-size: 32px;
     color: ${({ theme }) => theme.card.bottom.text};
+
+    ${MEDIA.XXL} {
+      font-size: 28px;
+    }
   }
 
   ${CardContainer}:hover & h5 {

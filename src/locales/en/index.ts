@@ -6,11 +6,12 @@ export default {
   PAGE404: "This page doesn't exist :(",
   LINKS: 'Links',
   HELLO: 'Hello, my name is',
-  ABOUT_ME: {
-    P1: "My name is Tomasz Czerwiński I'm 24 years old and I come from Szczecin. Professionally I programme, and currently I'm a frontend developer.",
-    P2: 'My adventure with programming began mundanely from computer games, but I was looking for something more than just unproductive entertainment, so for a long time I was interested in how my games were created. Over time, the range of my interests expanded and I have began interest in the world of webdevelopment. This determined my choice of schools and so I graduated from SCI with a degree in Computer Science and completed studies in Computer Science at the Maritime Academy at Szczecin with a degree in Engineering. This all contributed to my fascination with creating new software, desktop and web applications, and of course video games. Already during the graduation I was accepted for an internship at a global company where a short while after the internship, with my skills I ended up in a professional project, where the my main goal was to design a panel for electric cars from one of the major manufacturers in America.',
-    P3: 'I am highly motivated to work in a professional team where I will not only give my best, but am also able to learn a lot. By hiring me, your company will gain many benefits from my enthusiasm to work and develop my skills.',
-  },
+  ABOUT_ME: [
+    "My name is Tomasz Czerwiński I'm 24 years old and I come from Szczecin. Professionally I programme and currently I'm a frontend developer.",
+    'My adventure with programming began prosaically from computer games, but I was looking for something more. That is why I started to be interested in how games are created. This determined my choice of schools and that is why I graduated from SCI Technical College with a IT technician diploma and the Maritime Academy with a degree in Computer Science as an engineer. Over time, the range of my interests expanded, which contributed to the exploration of knowledge related to software development, desktop and web applications, and of course games.',
+    'Immediately after completing the internship with my skills I joined to an experienced team, where my main task was to design a panel for electric cars for one of the manufacturers in America.',
+    'Currently I am dedicating time to developing myself in terms of web technologies. I would like to improve my skills in a professional team, and every new challenge will allow me to increase my competence.',
+  ],
   BUTTON: {
     LONG: 'Download CV',
     SHORT: 'CV',
@@ -24,7 +25,7 @@ export default {
         DESCRIPTION: 'My main tasks were:',
         ITEMS: [
           'performance error analysis,',
-          'evaluating what factors affect the function,',
+          'assessment of factors affecting function,',
           'analysis of functions that are malfunctioning,',
           'repairing implemented features and creating your own,',
           'improving the appearance of the application,',
@@ -45,7 +46,7 @@ export default {
           'improving and correcting the appearance of the HMI,',
           'analyzing and testing applications,',
           'reporting and correcting errors,',
-          'constant communication between different teams to estimate different solutions in terms of improving HMI performance and resolving errors arising from different HMI layers.',
+          'constant communication between different teams to estimate different ideas in terms of improving HMI performance and resolving bugs arising from different HMI layers.',
         ],
       },
       PERIOD: 'months',

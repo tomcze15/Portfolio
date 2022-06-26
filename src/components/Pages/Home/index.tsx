@@ -200,6 +200,10 @@ const CircleLeft = styled.div`
 const Home: FunctionComponent = (): JSX.Element => {
   const { t } = useTranslation();
 
+  const paragraphs: string[] = t('ABOUT_ME', {
+    returnObjects: true,
+  });
+
   return (
     <MainWrapper>
       <PageTitle title={t('HOME')} />
@@ -213,9 +217,9 @@ const Home: FunctionComponent = (): JSX.Element => {
           <PhotoContainer src={ImageTomasz} alt={t('AUTHOR_PHOTO')} />
         </TomaszContainer>
         <Box>
-          <ParagraphWrapper>{t('ABOUT_ME.P1')}</ParagraphWrapper>
-          <ParagraphWrapper>{t('ABOUT_ME.P2')}</ParagraphWrapper>
-          <ParagraphWrapper>{t('ABOUT_ME.P3')}</ParagraphWrapper>
+          {paragraphs.map((p, index) => (
+            <ParagraphWrapper key={index}>{p}</ParagraphWrapper>
+          ))}
         </Box>
       </Front>
       <Behind>

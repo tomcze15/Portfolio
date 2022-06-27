@@ -7,8 +7,8 @@ export default {
   LINKS: 'Links',
   HELLO: 'Hello, my name is',
   ABOUT_ME: [
-    "My name is Tomasz Czerwiński I'm 24 years old and I come from Szczecin. Professionally I programme and currently I'm a frontend developer.",
-    'My adventure with programming began prosaically from computer games, but I was looking for something more. That is why I started to be interested in how games are created. This determined my choice of schools and that is why I graduated from SCI Technical College with a IT technician diploma and the Maritime Academy with a degree in Computer Science as an engineer. Over time, the range of my interests expanded, which contributed to the exploration of knowledge related to software development, desktop and web applications, and of course games.',
+    "My name is Tomasz Czerwiński, I'm 24 years old and I come from Szczecin. Professionally I programme and currently I'm a frontend developer.",
+    'My adventure with programming began prosaically from computer games, but I was looking for something more, that is why I started to be interested in how games are created. This determined my choice of schools and that is why I graduated from SCI Technical College with a IT technician diploma and the Maritime Academy with a degree in Computer Science as an engineer. Over time, the range of my interests expanded, which contributed to the exploration of knowledge related to software development, desktop and web applications, and of course games.',
     'Immediately after completing the internship with my skills I joined to an experienced team, where my main task was to design a panel for electric cars for one of the manufacturers in America.',
     'Currently I am dedicating time to developing myself in terms of web technologies. I would like to improve my skills in a professional team, and every new challenge will allow me to increase my competence.',
   ],
